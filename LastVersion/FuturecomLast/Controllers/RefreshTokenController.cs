@@ -14,22 +14,28 @@ namespace FuturecomLast.Controllers
     public class RefreshTokenController : Controller
     {
        
-
         [AllowAnonymous]
+        [HttpGet]
         public async Task<IActionResult> ReToken()
         {
-            
-          /*       
+            RefreshTokenRequest refreshToken = new RefreshTokenRequest();
 
-            RefreshTokenRequest reToken = new RefreshTokenRequest();
+            HttpContext.Request.Cookies.TryGetValue("accessToken", out string accessvalue);
+            HttpContext.Request.Cookies.TryGetValue("refreshToken", out string refreshvalue);
 
-           // var result = await reToken.CheckToken();
+            var reToken = refreshvalue;
 
-            if (result.Success)
+            var result = await refreshToken.CheckToken(reToken);
+
+            if(result!=null)
             {
-                return RedirectToAction();
+
+
+                return RedirectToAction("Index", "Home");
             }
-            */
+
+            
+
 
             return View();
         }

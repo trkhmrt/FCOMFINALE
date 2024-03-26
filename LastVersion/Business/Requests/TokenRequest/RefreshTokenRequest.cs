@@ -26,7 +26,7 @@ namespace Business.Requests.TokenRequest
            
             using (var client = new HttpClient())
             {
-                var apiUrl = "https://localhost:7069/checktoken";
+                var apiUrl = "https://localhost:7069/token/checktoken";
 
 
                 client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", refreshToken);
@@ -46,7 +46,7 @@ namespace Business.Requests.TokenRequest
                 {
                    
                     var errorContent = await response.Content.ReadAsStringAsync();
-                    return new ApiResponse { Success = true, Message = "TOKEN NOT CHANGED.REFRESH TOKEN EXP" };
+                    return new ApiResponse { Success = false, Message = "TOKEN NOT CHANGED.REFRESH TOKEN EXP" };
                 }
             }
         }
