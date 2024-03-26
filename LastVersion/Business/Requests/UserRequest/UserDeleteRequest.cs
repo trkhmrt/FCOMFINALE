@@ -25,7 +25,7 @@ namespace Business.Requests
 
                 httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
 
-                var response = await httpClient.PostAsync("https://localhost:7069/user/delete", content);
+                var response = await httpClient.PostAsync($"https://localhost:7069/user/delete/{id}", content);
 
 
 
