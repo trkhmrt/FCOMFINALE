@@ -6,12 +6,13 @@ using Newtonsoft.Json.Linq;
 using System.Net.Http.Headers;
 using System.Text;
 using System.Security.Claims;
+using System.Net.Http;
 
 namespace Business.Requests
 {
 	public class ChangePwRequest
 	{
-        public async Task<ApiResponse> ChangePw(UserPwUpdateDto model)
+        public async Task<ApiResponse> ChangePw(UserPwUpdateDto model,string token)
         {
 
             using (var client = new HttpClient())
@@ -23,7 +24,9 @@ namespace Business.Requests
                 client.DefaultRequestHeaders.Accept.Clear();
                 client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 
-              
+                client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+
+
 
                 var response = await client.PostAsync("https://localhost:7069/user/changepw", content);
 

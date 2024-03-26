@@ -35,7 +35,7 @@ namespace FuturecomLast.Controllers
         UserGetByIdRequest userGetByIdRequest = new UserGetByIdRequest();
         UserListRequest userListRequest = new UserListRequest();
         UserDeleteRequest userDeleteRequest = new UserDeleteRequest();
-
+        PasswordValidator passwordValidator = new PasswordValidator();
 
 
         private readonly UserManager<User> _userManager;
@@ -84,11 +84,23 @@ namespace FuturecomLast.Controllers
         }
 
 
-
-        public IActionResult UserDelete()
+        [HttpGet]
+        public async Task<IActionResult> UserDelete(string id)
         {
+            HttpContext.Request.Cookies.TryGetValue("accessToken", out string cookieValue);
 
-            return View();
+            var accessToken = cookieValue;
+
+            await userDeleteRequest.DeleteUser(id,accessToken);
+
+          
+            return RedirectToAction("UserListAll");
+           
+
+
+
+
+
         }
 
         [Authorize(Roles = "Admin")]
@@ -157,35 +169,16 @@ namespace FuturecomLast.Controllers
         }
      
 
-        [HttpGet]
-        public async Task<IActionResult> UserDelete(Guid id)
-        {
-            HttpContext.Request.Cookies.TryGetValue("accessToken", out string cookieValue);
-
-            var accessToken = HttpContext.Session.GetString("accessToken");
-      
-
-
-            var result = await userDeleteRequest.DeleteUserById(id);
-
-
-
-            return RedirectToAction("UserListAll");
-
-
-
-
-
-
-        }
-
-
 
 
         [Authorize(Roles ="NormalUser,Admin")]
         public async Task<IActionResult> UserChangePw(UserPwUpdateDto info)
         {
-            PasswordValidator passwordValidator = new PasswordValidator();
+            HttpContext.Request.Cookies.TryGetValue("accessToken", out string cookieValue);
+
+            var accessToken = HttpContext.Session.GetString("accessToken");
+
+        
            
             if (Request.Method == "POST")
             {
@@ -193,7 +186,7 @@ namespace FuturecomLast.Controllers
                if (result.IsValid)
                 {
                     ChangePwRequest changePwRequest = new ChangePwRequest();
-                    changePwRequest.ChangePw(info);
+                    changePwRequest.ChangePw(info,accessToken);
 
                 }
                 else
