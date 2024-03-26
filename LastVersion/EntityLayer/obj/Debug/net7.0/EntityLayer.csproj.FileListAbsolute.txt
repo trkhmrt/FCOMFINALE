@@ -12,3 +12,17 @@
 /Users/tarikhamarat/Desktop/LastVersion/EntityLayer/obj/Debug/net7.0/EntityLayer.pdb
 /Users/tarikhamarat/Desktop/LastVersion/EntityLayer/obj/Debug/net7.0/EntityLayer.genruntimeconfig.cache
 /Users/tarikhamarat/Desktop/LastVersion/EntityLayer/obj/Debug/net7.0/ref/EntityLayer.dll
+/Users/tarikhamarat/Documents/GitHub/FCOMFINALE/LastVersion/EntityLayer/bin/Debug/net7.0/EntityLayer.deps.json
+/Users/tarikhamarat/Documents/GitHub/FCOMFINALE/LastVersion/EntityLayer/bin/Debug/net7.0/EntityLayer.runtimeconfig.json
+/Users/tarikhamarat/Documents/GitHub/FCOMFINALE/LastVersion/EntityLayer/bin/Debug/net7.0/EntityLayer.dll
+/Users/tarikhamarat/Documents/GitHub/FCOMFINALE/LastVersion/EntityLayer/bin/Debug/net7.0/EntityLayer.pdb
+/Users/tarikhamarat/Documents/GitHub/FCOMFINALE/LastVersion/EntityLayer/obj/Debug/net7.0/EntityLayer.csproj.AssemblyReference.cache
+/Users/tarikhamarat/Documents/GitHub/FCOMFINALE/LastVersion/EntityLayer/obj/Debug/net7.0/EntityLayer.GeneratedMSBuildEditorConfig.editorconfig
+/Users/tarikhamarat/Documents/GitHub/FCOMFINALE/LastVersion/EntityLayer/obj/Debug/net7.0/EntityLayer.AssemblyInfoInputs.cache
+/Users/tarikhamarat/Documents/GitHub/FCOMFINALE/LastVersion/EntityLayer/obj/Debug/net7.0/EntityLayer.AssemblyInfo.cs
+/Users/tarikhamarat/Documents/GitHub/FCOMFINALE/LastVersion/EntityLayer/obj/Debug/net7.0/EntityLayer.csproj.CoreCompileInputs.cache
+/Users/tarikhamarat/Documents/GitHub/FCOMFINALE/LastVersion/EntityLayer/obj/Debug/net7.0/EntityLayer.dll
+/Users/tarikhamarat/Documents/GitHub/FCOMFINALE/LastVersion/EntityLayer/obj/Debug/net7.0/refint/EntityLayer.dll
+/Users/tarikhamarat/Documents/GitHub/FCOMFINALE/LastVersion/EntityLayer/obj/Debug/net7.0/EntityLayer.pdb
+/Users/tarikhamarat/Documents/GitHub/FCOMFINALE/LastVersion/EntityLayer/obj/Debug/net7.0/EntityLayer.genruntimeconfig.cache
+/Users/tarikhamarat/Documents/GitHub/FCOMFINALE/LastVersion/EntityLayer/obj/Debug/net7.0/ref/EntityLayer.dll

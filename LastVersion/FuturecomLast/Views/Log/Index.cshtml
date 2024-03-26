@@ -16,21 +16,12 @@
                 foreach (var item in Model)
                 {
                     <tr>
-                        <th scope="row">
-                            @item.UserID
-                        </th>
-                    </tr>
-                    <tr>
-                        <th scope="row">
-                            @item.Type
-                        </th>
-                    </tr>
-                    <tr>
-                        <th scope="row">
-                            @item.CreatedDate
-                        </th>
-                    </tr>
-
+                        <th scope="row">@item.UserID</th>
+                        <td>@item.Type</td>
+                        <td>@item.CreatedDate.</td>
+                        
+                    
+                     </tr>
 
                 }
             }
