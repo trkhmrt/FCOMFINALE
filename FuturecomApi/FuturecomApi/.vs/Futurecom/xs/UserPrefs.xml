@@ -1,0 +1,84 @@
+﻿<Properties StartupConfiguration="{54ADF810-4C44-4358-B4CE-CCE59311D234}|https">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/tarikhamarat/Documents/GitHub/FuturecomCase/FuturecomApi/FuturecomApi/Middlewares/TokenCheckerMiddleware.cs" relfile="Middlewares/TokenCheckerMiddleware.cs" line="15" column="1" />
+      <Breakpoint file="/Users/tarikhamarat/Documents/GitHub/FuturecomCase/FuturecomApi/FuturecomApi/Controllers/YasakController.cs" relfile="Controllers/YasakController.cs" line="15" column="1" />
+      <Breakpoint file="/Users/tarikhamarat/Documents/GitHub/FuturecomCase/FuturecomApi/FuturecomApi/Middlewares/HelloMiddleware.cs" relfile="Middlewares/HelloMiddleware.cs" line="8" column="1" />
+      <Breakpoint file="/Users/tarikhamarat/Documents/GitHub/FuturecomCase/FuturecomApi/FuturecomApi/Middlewares/HelloMiddleware.cs" relfile="Middlewares/HelloMiddleware.cs" line="5" column="1" />
+      <Breakpoint file="/Users/tarikhamarat/Documents/GitHub/FuturecomCase/FuturecomApi/FuturecomApi/Middlewares/HelloMiddleware.cs" relfile="Middlewares/HelloMiddleware.cs" line="15" column="1" />
+      <Breakpoint file="/Users/tarikhamarat/Documents/GitHub/FuturecomCase/FuturecomApi/FuturecomApi/Middlewares/HelloMiddleware.cs" relfile="Middlewares/HelloMiddleware.cs" line="13" column="1" />
+      <Breakpoint file="/Users/tarikhamarat/Documents/GitHub/FuturecomCase/FuturecomApi/FuturecomApi/Middlewares/GlobalTokenHandler.cs" relfile="Middlewares/GlobalTokenHandler.cs" line="20" column="1" />
+      <Breakpoint file="/Users/tarikhamarat/Documents/GitHub/FuturecomCase/FuturecomApi/FuturecomApi/Middlewares/AuthenticationMiddleware.cs" relfile="Middlewares/AuthenticationMiddleware.cs" line="33" column="1" />
+      <Breakpoint file="/Users/tarikhamarat/Documents/GitHub/FuturecomCase/FuturecomApi/FuturecomApi/Middlewares/ValidateFilter.cs" relfile="Middlewares/ValidateFilter.cs" line="15" column="1" />
+      <Breakpoint file="/Users/tarikhamarat/Documents/GitHub/FuturecomCase/FuturecomApi/FuturecomApi/Controllers/LogController.cs" relfile="Controllers/LogController.cs" line="22" column="1" />
+      <Breakpoint file="/Users/tarikhamarat/Documents/GitHub/FuturecomCase/FuturecomApi/FuturecomApi/Middlewares/GlobalTokenValidator.cs" relfile="Middlewares/GlobalTokenValidator.cs" line="27" column="1" />
+      <Breakpoint file="/Users/tarikhamarat/Documents/GitHub/FuturecomCase/FuturecomApi/FuturecomApi/Controllers/UserController.cs" relfile="Controllers/UserController.cs" line="268" column="1" />
+      <Breakpoint file="/Users/tarikhamarat/Documents/GitHub/FuturecomCase/FuturecomApi/FuturecomApi/Controllers/RoleController.cs" relfile="Controllers/RoleController.cs" line="111" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.FuturecomApi PreferredExecutionTarget="/Applications/Brave Browser.app" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/AuthController.cs">
+    <Files>
+      <File FileName="../DataAccessLayer/Concrete/Context.cs" Line="54" Column="1" />
+      <File FileName="../EntityLayer/Concrete/User.cs" Line="16" Column="1" />
+      <File FileName="Properties/launchSettings.json" />
+      <File FileName="Program.cs" Line="132" Column="1" />
+      <File FileName="Controllers/AuthController.cs" Line="44" Column="1" />
+      <File FileName="Controllers/LogController.cs" Line="21" Column="41" />
+      <File FileName="../DtoLayer/UserDtos/UserPasswordDto.cs" />
+      <File FileName="../DtoLayer/UserDtos/UserLogoutDto.cs" />
+      <File FileName="../BusinessLayer/Concrete/UserManagement.cs" Line="11" Column="37" />
+      <File FileName="Middlewares/GlobalExceptionHandlingMiddleware.cs" Line="33" Column="1" />
+      <File FileName="Controllers/UserController.cs" Line="68" Column="1" />
+      <File FileName="../EntityLayer/Concrete/Error.cs" />
+      <File FileName="appsettings.json" Line="8" Column="2" />
+      <File FileName="../DtoLayer/UserDtos/UserRegisterDto.cs" Line="6" Column="3" />
+      <File FileName="../DtoLayer/LoginDtos/LoginDto.cs" Line="8" Column="1" />
+      <File FileName="../DataAccessLayer/TokenManager/JwtSettings.cs" Line="1" Column="1" />
+      <File FileName="../DtoLayer/UserDtos/UserUpdateDto.cs" />
+      <File FileName="../DataAccessLayer/TokenManager/RefreshTokenManager.cs" Line="1" Column="1" />
+      <File FileName="../DataAccessLayer/TokenManager/TokenValidator.cs" Line="1" Column="1" />
+      <File FileName="../DataAccessLayer/TokenManager/AccessTokenGenerator.cs" Line="27" Column="50" />
+      <File FileName="Controllers/TokenController.cs" Line="55" Column="1" />
+      <File FileName="../EntityLayer/Concrete/UserLog.cs" />
+      <File FileName="../DtoLayer/TokenDtos/TokenDto.cs" />
+      <File FileName="../DtoLayer/UserDtos/UserUpdateNormalDto.cs" />
+      <File FileName="WeatherForecast.cs" Line="1" Column="1" />
+      <File FileName="../EntityLayer/Concrete/Role.cs" Line="8" Column="3" />
+      <File FileName="../DataAccessLayer/Repositories/GenericRepository.cs" />
+      <File FileName="../DataAccessLayer/Abstract/IGenericDal.cs" />
+      <File FileName="../DataAccessLayer/Abstract/IErrorDal.cs" />
+      <File FileName="../BusinessLayer/Abstract/IGenericService.cs" />
+      <File FileName="../BusinessLayer/Abstract/IErrorService.cs" />
+      <File FileName="../DataAccessLayer/EfRepositories/EfErrorRepo.cs" />
+      <File FileName="../DataAccessLayer/EfRepositories/EfUserRepo.cs" Line="15" Column="1" />
+      <File FileName="../BusinessLayer/Concrete/UserLogManager.cs" Line="1" Column="1" />
+      <File FileName="Controllers/RoleController.cs" Line="111" Column="1" />
+      <File FileName="../DtoLayer/RoleDtos/RoleUpdateDto.cs" Line="10" Column="41" />
+      <File FileName="../DtoLayer/RoleDtos/RoleAssignModel.cs" Line="4" Column="30" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Futurecom">
+            <Node name="DtoLayer">
+              <Node name="RoleDtos" expanded="True" />
+            </Node>
+            <Node name="EntityLayer" expanded="True">
+              <Node name="Concrete" expanded="True" />
+            </Node>
+            <Node name="FuturecomApi">
+              <Node name="Controllers" expanded="True">
+                <Node name="AuthController.cs" selected="True" />
+              </Node>
+              <Node name="Middlewares" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+</Properties>

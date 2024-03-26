@@ -1,0 +1,51 @@
+﻿@using EntityLayer.Concrete
+@model List<User>
+
+<div class="container">
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Firstname</th>
+                <th scope="col">Lastname</th>
+                <th scope="col">Email</th>
+                <th scope="col">PhoneNumber</th>
+                <th scope="col">Status</th>
+                <th scope="col">Delete</th>
+                <th scope="col">Update</th>
+                <th scope="col">Assign Role</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model != null)
+                {
+                    foreach (var item in Model)
+                    {
+                <tr>
+                    <th scope="row">@item.Id</th>
+                    <td>@item.FirstName</td>
+                    <td>@item.LastName</td>
+                    <td>@item.Email</td>
+                    <td>@item.PhoneNumber</td>
+                    <td>@item.Status</td>
+                    <td><a href="@Url.Action("UserDelete", "User", new { id = item.Id.ToString() })" class="btn btn-danger">DELETE</a></td>
+                    <td><a href="@Url.Action("UserUpdate", "User", new { id = item.Id.ToString() })" class="btn btn-warning">EDIT</a></td>
+                    
+                    <td>
+
+                       
+                        <a href="@Url.Action("AssignRole", "Role", new { id = item.Id.ToString() })" class="btn btn-success">ASSIGN ROLE </a>
+
+                    </td>
+                 
+                </tr>
+
+
+                    }
+                }
+
+        </tbody>
+    </table>
+
+
+</div>

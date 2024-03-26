@@ -1,0 +1,20 @@
+﻿@using DtoLayer.Concrete
+<h1>ROLE ATAMA</h1>
+@model RoleUpdateRequestDto
+
+
+<form method="post">
+    <input asp-for="@Model.userId" hidden/>
+   
+    @for (int i = 0; i < Model.Roles.Count; i++)
+    {
+        <div class="formc-check">
+            <input type="hidden" asp-for="@Model.Roles[i].RoleID" />
+            <input type="hidden" asp-for="@Model.Roles[i].Name" />
+            <input type="checkbox" asp-for="@Model.Roles[i].Exists" />
+            <label class="form-check-label" for="@Model.Roles[i].Exists">@Model.Roles[i].Name</label>
+        </div>
+    }
+    <input type="submit" class="btn btn-warning" />
+
+</form>

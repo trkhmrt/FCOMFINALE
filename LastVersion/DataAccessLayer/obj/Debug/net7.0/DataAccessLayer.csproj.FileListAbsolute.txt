@@ -1,0 +1,17 @@
+/Users/tarikhamarat/Desktop/LastVersion/DataAccessLayer/bin/Debug/net7.0/DataAccessLayer.deps.json
+/Users/tarikhamarat/Desktop/LastVersion/DataAccessLayer/bin/Debug/net7.0/DataAccessLayer.runtimeconfig.json
+/Users/tarikhamarat/Desktop/LastVersion/DataAccessLayer/bin/Debug/net7.0/DataAccessLayer.dll
+/Users/tarikhamarat/Desktop/LastVersion/DataAccessLayer/bin/Debug/net7.0/DataAccessLayer.pdb
+/Users/tarikhamarat/Desktop/LastVersion/DataAccessLayer/bin/Debug/net7.0/EntityLayer.dll
+/Users/tarikhamarat/Desktop/LastVersion/DataAccessLayer/bin/Debug/net7.0/EntityLayer.pdb
+/Users/tarikhamarat/Desktop/LastVersion/DataAccessLayer/obj/Debug/net7.0/DataAccessLayer.csproj.AssemblyReference.cache
+/Users/tarikhamarat/Desktop/LastVersion/DataAccessLayer/obj/Debug/net7.0/DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+/Users/tarikhamarat/Desktop/LastVersion/DataAccessLayer/obj/Debug/net7.0/DataAccessLayer.AssemblyInfoInputs.cache
+/Users/tarikhamarat/Desktop/LastVersion/DataAccessLayer/obj/Debug/net7.0/DataAccessLayer.AssemblyInfo.cs
+/Users/tarikhamarat/Desktop/LastVersion/DataAccessLayer/obj/Debug/net7.0/DataAccessLayer.csproj.CoreCompileInputs.cache
+/Users/tarikhamarat/Desktop/LastVersion/DataAccessLayer/obj/Debug/net7.0/DataAccessLayer.csproj.CopyComplete
+/Users/tarikhamarat/Desktop/LastVersion/DataAccessLayer/obj/Debug/net7.0/DataAccessLayer.dll
+/Users/tarikhamarat/Desktop/LastVersion/DataAccessLayer/obj/Debug/net7.0/refint/DataAccessLayer.dll
+/Users/tarikhamarat/Desktop/LastVersion/DataAccessLayer/obj/Debug/net7.0/DataAccessLayer.pdb
+/Users/tarikhamarat/Desktop/LastVersion/DataAccessLayer/obj/Debug/net7.0/DataAccessLayer.genruntimeconfig.cache
+/Users/tarikhamarat/Desktop/LastVersion/DataAccessLayer/obj/Debug/net7.0/ref/DataAccessLayer.dll

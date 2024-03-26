@@ -1,0 +1,33 @@
+﻿@using DtoLayer.Concrete
+@model UserPwUpdateDto
+
+<div class="container">
+    @using (Html.BeginForm("UserChangePw", "User", FormMethod.Post))
+    {
+
+
+
+        <div class="mb-3">
+
+            <div class="input-group">
+                <span class="input-group-text" id="basic-addon3">Current Password</span>
+                
+                @Html.TextBoxFor(x => x.CurrentPw)
+                @Html.ValidationMessageFor(x => x.CurrentPw)
+            </div>
+
+        </div>
+        <div class="mb-3">
+
+            <div class="input-group">
+                <span class="input-group-text" id="basic-addon3">New Password</span>
+                @Html.TextBoxFor(x => x.NewPw)
+                @Html.ValidationMessageFor(x => x.NewPw)
+            </div>
+
+          
+            <input type="submit" class="btn btn-success" />
+
+        </div>
+    }
+</div>

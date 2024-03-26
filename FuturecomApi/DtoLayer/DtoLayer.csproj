@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="UserDtos\" />
+    <None Remove="LoginDtos\" />
+    <None Remove="TokenDtos\" />
+    <None Remove="RoleDtos\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="UserDtos\" />
+    <Folder Include="LoginDtos\" />
+    <Folder Include="TokenDtos\" />
+    <Folder Include="RoleDtos\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="7.0.16" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="7.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EntityLayer\EntityLayer.csproj" />
+  </ItemGroup>
+</Project>

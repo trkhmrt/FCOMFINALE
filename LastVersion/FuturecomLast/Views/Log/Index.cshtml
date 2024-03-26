@@ -1,0 +1,43 @@
+﻿@using EntityLayer.Concrete
+@model List<UserLog>
+
+<div class="container">
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">User Id</th>
+                <th scope="col">Type</th>
+                <th scope="col">Created Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model != null)
+            {
+                foreach (var item in Model)
+                {
+                    <tr>
+                        <th scope="row">
+                            @item.UserID
+                        </th>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            @item.Type
+                        </th>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            @item.CreatedDate
+                        </th>
+                    </tr>
+
+
+                }
+            }
+
+        </tbody>
+        </table>
+
+
+</div>
+

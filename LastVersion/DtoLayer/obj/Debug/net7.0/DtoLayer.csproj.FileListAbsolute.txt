@@ -1,0 +1,17 @@
+/Users/tarikhamarat/Desktop/LastVersion/DtoLayer/bin/Debug/net7.0/DtoLayer.deps.json
+/Users/tarikhamarat/Desktop/LastVersion/DtoLayer/bin/Debug/net7.0/DtoLayer.dll
+/Users/tarikhamarat/Desktop/LastVersion/DtoLayer/bin/Debug/net7.0/DtoLayer.pdb
+/Users/tarikhamarat/Desktop/LastVersion/DtoLayer/bin/Debug/net7.0/DataAccessLayer.dll
+/Users/tarikhamarat/Desktop/LastVersion/DtoLayer/bin/Debug/net7.0/EntityLayer.dll
+/Users/tarikhamarat/Desktop/LastVersion/DtoLayer/bin/Debug/net7.0/EntityLayer.pdb
+/Users/tarikhamarat/Desktop/LastVersion/DtoLayer/bin/Debug/net7.0/DataAccessLayer.pdb
+/Users/tarikhamarat/Desktop/LastVersion/DtoLayer/obj/Debug/net7.0/DtoLayer.csproj.AssemblyReference.cache
+/Users/tarikhamarat/Desktop/LastVersion/DtoLayer/obj/Debug/net7.0/DtoLayer.GeneratedMSBuildEditorConfig.editorconfig
+/Users/tarikhamarat/Desktop/LastVersion/DtoLayer/obj/Debug/net7.0/DtoLayer.AssemblyInfoInputs.cache
+/Users/tarikhamarat/Desktop/LastVersion/DtoLayer/obj/Debug/net7.0/DtoLayer.AssemblyInfo.cs
+/Users/tarikhamarat/Desktop/LastVersion/DtoLayer/obj/Debug/net7.0/DtoLayer.csproj.CoreCompileInputs.cache
+/Users/tarikhamarat/Desktop/LastVersion/DtoLayer/obj/Debug/net7.0/DtoLayer.csproj.CopyComplete
+/Users/tarikhamarat/Desktop/LastVersion/DtoLayer/obj/Debug/net7.0/DtoLayer.dll
+/Users/tarikhamarat/Desktop/LastVersion/DtoLayer/obj/Debug/net7.0/refint/DtoLayer.dll
+/Users/tarikhamarat/Desktop/LastVersion/DtoLayer/obj/Debug/net7.0/DtoLayer.pdb
+/Users/tarikhamarat/Desktop/LastVersion/DtoLayer/obj/Debug/net7.0/ref/DtoLayer.dll
