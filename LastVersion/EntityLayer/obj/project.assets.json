@@ -4096,11 +4096,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/tarikhamarat/Desktop/LastVersion/EntityLayer/EntityLayer.csproj",
+      "projectUniqueName": "/Users/tarikhamarat/Documents/GitHub/FCOMFINALE/LastVersion/EntityLayer/EntityLayer.csproj",
       "projectName": "EntityLayer",
-      "projectPath": "/Users/tarikhamarat/Desktop/LastVersion/EntityLayer/EntityLayer.csproj",
+      "projectPath": "/Users/tarikhamarat/Documents/GitHub/FCOMFINALE/LastVersion/EntityLayer/EntityLayer.csproj",
       "packagesPath": "/Users/tarikhamarat/.nuget/packages/",
-      "outputPath": "/Users/tarikhamarat/Desktop/LastVersion/EntityLayer/obj/",
+      "outputPath": "/Users/tarikhamarat/Documents/GitHub/FCOMFINALE/LastVersion/EntityLayer/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/tarikhamarat/.nuget/NuGet/NuGet.Config"
@@ -4185,7 +4185,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.101/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.314/RuntimeIdentifierGraph.json"
       }
     }
   }

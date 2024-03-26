@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8es3l+qLPaWQ4WFHjabzXOfD0fwuy79knuQGpDA5kVWZ7z3jqSD9Be+9ANlEvVzplc2gzD4g2OHjcdSBbaaUbA==",
+  "dgSpecHash": "Wk2g2qMZ2yQb5roNBlupClUMQiGy02TwhNG78jY92Znk5H+wOhifjeSKFkyAK76LBSX/DcsccfPflsMQn5yQxQ==",
   "success": true,
-  "projectFilePath": "/Users/tarikhamarat/Desktop/LastVersion/Business/Business.csproj",
+  "projectFilePath": "/Users/tarikhamarat/Documents/GitHub/FCOMFINALE/LastVersion/Business/Business.csproj",
   "expectedPackageFiles": [
     "/Users/tarikhamarat/.nuget/packages/automapper/12.0.1/automapper.12.0.1.nupkg.sha512",
     "/Users/tarikhamarat/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/12.0.1/automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

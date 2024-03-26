@@ -3942,11 +3942,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/tarikhamarat/Desktop/LastVersion/Business/Business.csproj",
+      "projectUniqueName": "/Users/tarikhamarat/Documents/GitHub/FCOMFINALE/LastVersion/Business/Business.csproj",
       "projectName": "Business",
-      "projectPath": "/Users/tarikhamarat/Desktop/LastVersion/Business/Business.csproj",
+      "projectPath": "/Users/tarikhamarat/Documents/GitHub/FCOMFINALE/LastVersion/Business/Business.csproj",
       "packagesPath": "/Users/tarikhamarat/.nuget/packages/",
-      "outputPath": "/Users/tarikhamarat/Desktop/LastVersion/Business/obj/",
+      "outputPath": "/Users/tarikhamarat/Documents/GitHub/FCOMFINALE/LastVersion/Business/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/tarikhamarat/.nuget/NuGet/NuGet.Config"
@@ -3962,14 +3962,14 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "/Users/tarikhamarat/Desktop/LastVersion/DataAccessLayer/DataAccessLayer.csproj": {
-              "projectPath": "/Users/tarikhamarat/Desktop/LastVersion/DataAccessLayer/DataAccessLayer.csproj"
+            "/Users/tarikhamarat/Documents/GitHub/FCOMFINALE/LastVersion/DataAccessLayer/DataAccessLayer.csproj": {
+              "projectPath": "/Users/tarikhamarat/Documents/GitHub/FCOMFINALE/LastVersion/DataAccessLayer/DataAccessLayer.csproj"
             },
-            "/Users/tarikhamarat/Desktop/LastVersion/DtoLayer/DtoLayer.csproj": {
-              "projectPath": "/Users/tarikhamarat/Desktop/LastVersion/DtoLayer/DtoLayer.csproj"
+            "/Users/tarikhamarat/Documents/GitHub/FCOMFINALE/LastVersion/DtoLayer/DtoLayer.csproj": {
+              "projectPath": "/Users/tarikhamarat/Documents/GitHub/FCOMFINALE/LastVersion/DtoLayer/DtoLayer.csproj"
             },
-            "/Users/tarikhamarat/Desktop/LastVersion/EntityLayer/EntityLayer.csproj": {
-              "projectPath": "/Users/tarikhamarat/Desktop/LastVersion/EntityLayer/EntityLayer.csproj"
+            "/Users/tarikhamarat/Documents/GitHub/FCOMFINALE/LastVersion/EntityLayer/EntityLayer.csproj": {
+              "projectPath": "/Users/tarikhamarat/Documents/GitHub/FCOMFINALE/LastVersion/EntityLayer/EntityLayer.csproj"
             }
           }
         }
@@ -4013,7 +4013,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.101/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.314/RuntimeIdentifierGraph.json"
       }
     }
   }
