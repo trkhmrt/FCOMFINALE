@@ -45,6 +45,7 @@ namespace Business.Requests
                         else
                             {
                                 Console.WriteLine("API isteği başarısız oldu. Durum kodu: " + response.StatusCode);
+                            Console.WriteLine(response.StatusCode.GetType().Name);
                                 return null;
                             }
                         }

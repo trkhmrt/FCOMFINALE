@@ -153,9 +153,7 @@ namespace FuturecomLast.Controllers
         public async Task<IActionResult> UserUpdate(UserUpdateDto user)
         {
 
-            HttpContext.Request.Cookies.TryGetValue("accessToken", out string cookieValue);
-
-            var accessToken = HttpContext.Session.GetString("accessToken");
+            HttpContext.Request.Cookies.TryGetValue("accessToken", out string accessToken);
 
             var result = await userUpdateByName.UserUpdate(user, accessToken);
 

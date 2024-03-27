@@ -75,14 +75,16 @@ namespace FuturecomLast.Controllers
                 
                 if (!result.Success)
                 {
-                    
-                    //Arayüzde gösterilecek mesajım
-                    ModelState.AddModelError("", result.Message);
+
+
+
+                    ViewBag.Hata = result.Message;
                     return View();
               
                 }
 
-               
+
+          
                 HttpContext.Session.SetString("accessToken", result.accessToken);
                 HttpContext.Session.SetString("refreshToken", result.refreshToken);
 
