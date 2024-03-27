@@ -84,15 +84,8 @@ namespace FuturecomLast.Controllers
                 }
 
 
-          
-                HttpContext.Session.SetString("accessToken", result.accessToken);
-                HttpContext.Session.SetString("refreshToken", result.refreshToken);
-
-
-
-
-                var accessToken = HttpContext.Session.GetString("accessToken");
-                HttpContext.Response.Cookies.Append("accessToken", accessToken, new CookieOptions
+           
+                HttpContext.Response.Cookies.Append("accessToken", result.accessToken, new CookieOptions
                 {
                     Expires = DateTime.Now.AddDays(3), 
                     IsEssential = true, 
@@ -100,8 +93,8 @@ namespace FuturecomLast.Controllers
                 });
 
 
-                var refreshToken = HttpContext.Session.GetString("refreshToken");
-                HttpContext.Response.Cookies.Append("refreshToken", refreshToken, new CookieOptions
+           
+                HttpContext.Response.Cookies.Append("refreshToken", result.refreshToken, new CookieOptions
                 {
                     Expires = DateTime.Now.AddDays(3), 
                     IsEssential = true,

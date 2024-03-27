@@ -32,3 +32,4 @@
 /Users/tarikhamarat/Documents/GitHub/FCOMFINALE/LastVersion/DataAccessLayer/obj/Debug/net7.0/DataAccessLayer.pdb
 /Users/tarikhamarat/Documents/GitHub/FCOMFINALE/LastVersion/DataAccessLayer/obj/Debug/net7.0/DataAccessLayer.genruntimeconfig.cache
 /Users/tarikhamarat/Documents/GitHub/FCOMFINALE/LastVersion/DataAccessLayer/obj/Debug/net7.0/ref/DataAccessLayer.dll
+/Users/tarikhamarat/Documents/GitHub/FCOMFINALE/LastVersion/DataAccessLayer/obj/Debug/net7.0/DataAccessLayer.sourcelink.json

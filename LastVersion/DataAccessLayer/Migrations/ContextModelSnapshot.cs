@@ -52,15 +52,21 @@ namespace DataAccessLayer.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("4c6ed748-d5c8-4fbd-97e1-8d9c926e8cdf"),
+                            Id = new Guid("952119e5-4ee3-4df2-9c02-06539652bfae"),
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         },
                         new
                         {
-                            Id = new Guid("5504f856-d768-4baa-9b06-74479e2e5d04"),
+                            Id = new Guid("41de6e03-2205-470c-9616-6c28c739938f"),
                             Name = "NormalUser",
                             NormalizedName = "NORMALUSER"
+                        },
+                        new
+                        {
+                            Id = new Guid("0c94df79-f641-49a0-8a21-a9a0db18d13e"),
+                            Name = "Writer",
+                            NormalizedName = "WRITER"
                         });
                 });
 
@@ -168,9 +174,9 @@ namespace DataAccessLayer.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("f9a0b3bd-f912-4f47-ae58-b6e4b33f501b"),
+                            Id = new Guid("a9b47552-3afe-404d-902c-f8b17dde6a06"),
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "cd18a011-87be-4224-a82f-ea743b88c75b",
+                            ConcurrencyStamp = "bd5f0a88-e7bb-4c60-b283-ecdfd76c345b",
                             Email = "trkhamarat@gmail.com",
                             EmailConfirmed = true,
                             FirstName = "Tarik",
@@ -178,7 +184,7 @@ namespace DataAccessLayer.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "TRKHAMARAT@GMAIL.COM",
                             NormalizedUserName = "ADMIN",
-                            PasswordHash = "AQAAAAIAAYagAAAAEBADYT6FIHFwHLw49oVhCPcTi4ne++BSuD/WDj68Pi7iHRbDWu8dAd+3c0Tu0kZcTA==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEOAYUmw7y9a9NDLGeP9kuQSqlksOfFyoNlozRBTD9NiQG3/YAppSHwkX+mqyli3POg==",
                             PhoneNumber = "553 769 63 62",
                             PhoneNumberConfirmed = false,
                             Status = true,
@@ -187,9 +193,9 @@ namespace DataAccessLayer.Migrations
                         },
                         new
                         {
-                            Id = new Guid("1002bafc-2671-4f32-b84d-69401ec7c689"),
+                            Id = new Guid("844aac4d-33da-4c76-9ae6-e8815b4e76c8"),
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "6945d486-077a-42c1-bd14-1cfa611649c9",
+                            ConcurrencyStamp = "e0d51f87-017c-4be5-9c11-2daf714214d5",
                             Email = "user@example.com",
                             EmailConfirmed = true,
                             FirstName = "Normal",
@@ -197,7 +203,7 @@ namespace DataAccessLayer.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "USER@EXAMPLE.COM",
                             NormalizedUserName = "NORMALUSER",
-                            PasswordHash = "AQAAAAIAAYagAAAAEPydZ6tqFlsrgtbQEJXJimyILxWVehtbbivNjiL6OwtLEFyv8zSLkt7wy9lmMs2GOQ==",
+                            PasswordHash = "AQAAAAIAAYagAAAAENQJ4Q6Wl4pCrAoHMf3ZE8JnyimPUqGCefgeRSB/qK8Ua1hVwQwDB0j/PE1Cocc7tg==",
                             PhoneNumber = "555 555 55 55",
                             PhoneNumberConfirmed = false,
                             Status = true,
@@ -292,13 +298,13 @@ namespace DataAccessLayer.Migrations
                     b.HasData(
                         new
                         {
-                            UserId = new Guid("f9a0b3bd-f912-4f47-ae58-b6e4b33f501b"),
-                            RoleId = new Guid("4c6ed748-d5c8-4fbd-97e1-8d9c926e8cdf")
+                            UserId = new Guid("a9b47552-3afe-404d-902c-f8b17dde6a06"),
+                            RoleId = new Guid("952119e5-4ee3-4df2-9c02-06539652bfae")
                         },
                         new
                         {
-                            UserId = new Guid("1002bafc-2671-4f32-b84d-69401ec7c689"),
-                            RoleId = new Guid("5504f856-d768-4baa-9b06-74479e2e5d04")
+                            UserId = new Guid("844aac4d-33da-4c76-9ae6-e8815b4e76c8"),
+                            RoleId = new Guid("41de6e03-2205-470c-9616-6c28c739938f")
                         });
                 });
 

@@ -180,8 +180,9 @@ namespace DataAccessLayer.Migrations
                 columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
                 values: new object[,]
                 {
-                    { new Guid("4c6ed748-d5c8-4fbd-97e1-8d9c926e8cdf"), null, "Admin", "ADMIN" },
-                    { new Guid("5504f856-d768-4baa-9b06-74479e2e5d04"), null, "NormalUser", "NORMALUSER" }
+                    { new Guid("0c94df79-f641-49a0-8a21-a9a0db18d13e"), null, "Writer", "WRITER" },
+                    { new Guid("41de6e03-2205-470c-9616-6c28c739938f"), null, "NormalUser", "NORMALUSER" },
+                    { new Guid("952119e5-4ee3-4df2-9c02-06539652bfae"), null, "Admin", "ADMIN" }
                 });
 
             migrationBuilder.InsertData(
@@ -189,8 +190,8 @@ namespace DataAccessLayer.Migrations
                 columns: new[] { "Id", "AccessFailedCount", "ConcurrencyStamp", "Email", "EmailConfirmed", "FirstName", "LastName", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "Status", "TwoFactorEnabled", "UserName" },
                 values: new object[,]
                 {
-                    { new Guid("1002bafc-2671-4f32-b84d-69401ec7c689"), 0, "6945d486-077a-42c1-bd14-1cfa611649c9", "user@example.com", true, "Normal", "User", false, null, "USER@EXAMPLE.COM", "NORMALUSER", "AQAAAAIAAYagAAAAEPydZ6tqFlsrgtbQEJXJimyILxWVehtbbivNjiL6OwtLEFyv8zSLkt7wy9lmMs2GOQ==", "555 555 55 55", false, null, true, false, "normaluser" },
-                    { new Guid("f9a0b3bd-f912-4f47-ae58-b6e4b33f501b"), 0, "cd18a011-87be-4224-a82f-ea743b88c75b", "trkhamarat@gmail.com", true, "Tarik", "Hamarat", false, null, "TRKHAMARAT@GMAIL.COM", "ADMIN", "AQAAAAIAAYagAAAAEBADYT6FIHFwHLw49oVhCPcTi4ne++BSuD/WDj68Pi7iHRbDWu8dAd+3c0Tu0kZcTA==", "553 769 63 62", false, null, true, false, "admin" }
+                    { new Guid("844aac4d-33da-4c76-9ae6-e8815b4e76c8"), 0, "e0d51f87-017c-4be5-9c11-2daf714214d5", "user@example.com", true, "Normal", "User", false, null, "USER@EXAMPLE.COM", "NORMALUSER", "AQAAAAIAAYagAAAAENQJ4Q6Wl4pCrAoHMf3ZE8JnyimPUqGCefgeRSB/qK8Ua1hVwQwDB0j/PE1Cocc7tg==", "555 555 55 55", false, null, true, false, "normaluser" },
+                    { new Guid("a9b47552-3afe-404d-902c-f8b17dde6a06"), 0, "bd5f0a88-e7bb-4c60-b283-ecdfd76c345b", "trkhamarat@gmail.com", true, "Tarik", "Hamarat", false, null, "TRKHAMARAT@GMAIL.COM", "ADMIN", "AQAAAAIAAYagAAAAEOAYUmw7y9a9NDLGeP9kuQSqlksOfFyoNlozRBTD9NiQG3/YAppSHwkX+mqyli3POg==", "553 769 63 62", false, null, true, false, "admin" }
                 });
 
             migrationBuilder.InsertData(
@@ -198,8 +199,8 @@ namespace DataAccessLayer.Migrations
                 columns: new[] { "RoleId", "UserId" },
                 values: new object[,]
                 {
-                    { new Guid("5504f856-d768-4baa-9b06-74479e2e5d04"), new Guid("1002bafc-2671-4f32-b84d-69401ec7c689") },
-                    { new Guid("4c6ed748-d5c8-4fbd-97e1-8d9c926e8cdf"), new Guid("f9a0b3bd-f912-4f47-ae58-b6e4b33f501b") }
+                    { new Guid("41de6e03-2205-470c-9616-6c28c739938f"), new Guid("844aac4d-33da-4c76-9ae6-e8815b4e76c8") },
+                    { new Guid("952119e5-4ee3-4df2-9c02-06539652bfae"), new Guid("a9b47552-3afe-404d-902c-f8b17dde6a06") }
                 });
 
             migrationBuilder.CreateIndex(

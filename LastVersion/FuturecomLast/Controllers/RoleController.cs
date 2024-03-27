@@ -8,6 +8,7 @@ using DtoLayer.Concrete;
 using EntityLayer.Concrete;
 using FuturecomLast.Models;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -16,21 +17,26 @@ namespace FuturecomLast.Controllers
 {
     public class RoleController : Controller
     {
-
+        private readonly RoleManager<Role> _roleManager;
         RoleGetUser userRole = new RoleGetUser();
         UserGetByIdRequest getUser = new UserGetByIdRequest();
         RoleAddRequest roleAddRequest = new RoleAddRequest();
         RoleGetAll roles = new RoleGetAll();
 
+        public RoleController(RoleManager<Role> roleManager)
+        {
+            _roleManager = roleManager;
+
+        }
+
         public IActionResult AddRole()
         {
             
-
-
-                return View();
-
-           
+                return View();         
         }
+
+
+
         [HttpPost]
         public IActionResult AddRole(string rolename)
         {
@@ -39,6 +45,14 @@ namespace FuturecomLast.Controllers
             {
                 if (roleAddRequest.AddRole(rolename).Result)
                 {
+                    Role role = new Role
+                    {
+                        Id = Guid.NewGuid(),
+                        Name = rolename,
+                        NormalizedName = rolename.ToUpper()
+                    };
+                    _roleManager.CreateAsync(role);
+
                     return RedirectToAction("AddRole");
                 }
                

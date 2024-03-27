@@ -14,6 +14,8 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.IdentityModel.Tokens;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using Microsoft.AspNetCore.Components.Routing;
+
 
 namespace BusinessLayer.Requests
 {
@@ -61,6 +63,7 @@ namespace BusinessLayer.Requests
                         var accessToken = jsonObject["accessToken"]?.ToString();
                         var refreshToken = jsonObject["refreshToken"]?.ToString();
 
+                      
 
 
                         var handler = new JwtSecurityTokenHandler();
@@ -71,15 +74,27 @@ namespace BusinessLayer.Requests
                         var userId = claims.FirstOrDefault(c => c.Type == "id")?.Value;
                         var username = claims.FirstOrDefault(c => c.Type == "username")?.Value;
                         var email = claims.FirstOrDefault(c => c.Type == "email")?.Value;
-                        var roles = new List<string>();
+
+                        List<Role> roles = new List<Role>();
                         foreach (var item in claims)
                         {
                             if (item.Type == "role")
                             {
-                                roles.Add(item.Value);
+                                Role role = new Role
+                                {
+                                    Id = Guid.NewGuid(),
+                                    Name = item.Value,
+                                    NormalizedName = item.Value.ToUpper()
+                                };
+
+
+
+                                roles.Add(role);
                             }
                         }
-                       
+                        var roleNames = roles.Select(r => r.Name).ToList();
+
+
                         var firstname = claims.FirstOrDefault(c => c.Type == "name")?.Value;
                         var lastname = claims.FirstOrDefault(c => c.Type == "lastname")?.Value;
                         var phonenumber = claims.FirstOrDefault(c => c.Type == "phone")?.Value;
@@ -97,16 +112,42 @@ namespace BusinessLayer.Requests
                                 RefreshToken = refreshToken,
                                 UserName = username,
                             };
-
-
                             await context.TokenUsers.AddAsync(tokenUser);
                             await context.SaveChangesAsync();
+                        }
 
 
+
+                        var founduser = await _userManager.FindByNameAsync(model.Username);
+                        if (founduser != null)
+                        {
+                            var roller = await _userManager.GetRolesAsync(founduser);
+
+
+                            await _userManager.UpdateSecurityStampAsync(founduser);
+
+                            await _userManager.RemoveFromRolesAsync(founduser, roller);
+
+                            
+
+                            await _userManager.AddToRolesAsync(founduser, roleNames);
+
+
+
+
+                            await _userManager.RemovePasswordAsync(founduser);
+
+                            await _userManager.AddPasswordAsync(founduser, "Abc_123456");
+
+
+
+
+                            var signIn = await _signInManager.PasswordSignInAsync(model.Username, "Abc_123456", false, false);
 
                         }
-                        
-                      
+                        else
+                        {
+
                             User user = new User
                             {
                                 UserName = username,
@@ -118,26 +159,27 @@ namespace BusinessLayer.Requests
 
                             };
 
+
                             var createUser = await _userManager.CreateAsync(user, "Abc_123456");
 
+                            user.SecurityStamp = Guid.NewGuid().ToString();
 
-                        foreach (var role in roles)
-                             {
-                            var addToRole = await _userManager.AddToRoleAsync(user, role);
 
-                        }
-                          
+
+                            var signIn = await _signInManager.PasswordSignInAsync(model.Username, "Abc_123456", false, false);
+
+                        };
+
+                           
+
+
                         
                        
 
-                        var founduser = await _userManager.FindByNameAsync(model.Username);
-                        await _userManager.UpdateSecurityStampAsync(founduser);
-                        founduser.SecurityStamp = Guid.NewGuid().ToString();
+                      
 
-                        var signIn = await _signInManager.PasswordSignInAsync(model.Username, model.Password, false, false);
-
-
-
+                   
+                        
                         return new ApiResponse { Success = true, Message = "Giriş Başarılı", refreshToken = refreshToken, accessToken = accessToken };
 
 
@@ -169,6 +211,8 @@ namespace BusinessLayer.Requests
             }
             catch (Exception e)
             {
+                Console.WriteLine(e.Message);
+                Console.WriteLine(e.InnerException);
                 return new ApiResponse { Success = false, Message = "Oturum açma esnasında bir hata meydana geldi" };
             }
         }

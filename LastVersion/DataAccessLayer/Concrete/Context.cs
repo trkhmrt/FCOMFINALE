@@ -25,13 +25,15 @@ namespace DataAccessLayer.Concrete
             // Benzersiz GUID'ler oluştur
             Guid adminRoleId = Guid.NewGuid();
             Guid normalUserRoleid = Guid.NewGuid();
+            Guid writerRoleid = Guid.NewGuid();
             Guid adminUserId = Guid.NewGuid();
             Guid normalUserId = Guid.NewGuid();
 
             // Seed Roles
             modelBuilder.Entity<Role>().HasData(
                 new Role { Id = adminRoleId, Name = "Admin", NormalizedName = "ADMIN" },
-                new Role { Id = normalUserRoleid, Name = "NormalUser", NormalizedName = "NORMALUSER" }
+                new Role { Id = normalUserRoleid, Name = "NormalUser", NormalizedName = "NORMALUSER" },
+                new Role { Id = writerRoleid, Name ="Writer" ,NormalizedName= "WRITER"}
             );
 
             // Hash the password securely before storing it
