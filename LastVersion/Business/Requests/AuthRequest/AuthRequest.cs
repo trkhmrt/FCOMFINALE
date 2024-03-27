@@ -71,7 +71,15 @@ namespace BusinessLayer.Requests
                         var userId = claims.FirstOrDefault(c => c.Type == "id")?.Value;
                         var username = claims.FirstOrDefault(c => c.Type == "username")?.Value;
                         var email = claims.FirstOrDefault(c => c.Type == "email")?.Value;
-                        var role = claims.FirstOrDefault(c => c.Type == "role")?.Value;
+                        var roles = new List<string>();
+                        foreach (var item in claims)
+                        {
+                            if (item.Type == "role")
+                            {
+                                roles.Add(item.Value);
+                            }
+                        }
+                       
                         var firstname = claims.FirstOrDefault(c => c.Type == "name")?.Value;
                         var lastname = claims.FirstOrDefault(c => c.Type == "lastname")?.Value;
                         var phonenumber = claims.FirstOrDefault(c => c.Type == "phone")?.Value;
@@ -97,8 +105,8 @@ namespace BusinessLayer.Requests
 
 
                         }
-                        if (role != "Admin")
-                        {
+                        
+                      
                             User user = new User
                             {
                                 UserName = username,
@@ -112,9 +120,15 @@ namespace BusinessLayer.Requests
 
                             var createUser = await _userManager.CreateAsync(user, "Abc_123456");
 
-                            var addToRole = await _userManager.AddToRoleAsync(user, role);
-                        }
 
+                        foreach (var role in roles)
+                             {
+                            var addToRole = await _userManager.AddToRoleAsync(user, role);
+
+                        }
+                          
+                        
+                       
 
                         var founduser = await _userManager.FindByNameAsync(model.Username);
                         await _userManager.UpdateSecurityStampAsync(founduser);
@@ -155,7 +169,7 @@ namespace BusinessLayer.Requests
             }
             catch (Exception e)
             {
-                return new ApiResponse { Success = false, Message = "Bağlantı adresini kontrol edin" };
+                return new ApiResponse { Success = false, Message = "Oturum açma esnasında bir hata meydana geldi" };
             }
         }
 

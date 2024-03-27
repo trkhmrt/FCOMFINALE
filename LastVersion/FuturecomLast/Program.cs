@@ -49,7 +49,7 @@ public class Program
 
 
         builder.Services.AddScoped<RoleManager<Role>>();
-
+       
 
 
         builder.Services.AddAuthorization();
@@ -93,6 +93,7 @@ public class Program
 
         app.UseRouting();
 
+      
 
         app.UseAuthentication();
         //Authonticate authorizon üzerindeydi
