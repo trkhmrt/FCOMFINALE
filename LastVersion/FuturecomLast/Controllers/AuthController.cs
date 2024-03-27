@@ -125,6 +125,9 @@ namespace FuturecomLast.Controllers
         {
             _signInManager.SignOutAsync();
 
+            Response.Cookies.Delete("accessToken");
+            Response.Cookies.Delete("refreshToken");
+
             return RedirectToAction("Login");
         }
         }
