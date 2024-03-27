@@ -14,11 +14,9 @@ namespace FuturecomLast.ViewComponents
 
         public IViewComponentResult Invoke()
         {
+            HttpContext.Request.Cookies.TryGetValue("username", out string username);
 
-             //var identity = new ClaimsIdentity(claims, "Bearer");
-
-            // Create a new ClaimsPrincipal using the user's identity
-             //var principal = new ClaimsPrincipal(identity);
+            ViewBag.username = username;
 
 
 

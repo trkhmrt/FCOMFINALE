@@ -101,7 +101,7 @@ namespace FuturecomLast.Controllers
                     HttpOnly = true 
                 });
 
-
+                HttpContext.Response.Cookies.Append("username",model.Username);
 
 
                 return RedirectToAction("Index", "Home");

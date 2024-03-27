@@ -54,6 +54,7 @@
     <None Remove="Views\ErrorPages\" />
     <None Remove="Views\Role\" />
     <None Remove="Views\Log\" />
+    <None Remove="Views\UserProfile\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\Auth\" />
@@ -67,5 +68,6 @@
     <Folder Include="Views\ErrorPages\" />
     <Folder Include="Views\Role\" />
     <Folder Include="Views\Log\" />
+    <Folder Include="Views\UserProfile\" />
   </ItemGroup>
 </Project>

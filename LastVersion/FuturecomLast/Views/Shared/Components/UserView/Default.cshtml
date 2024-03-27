@@ -1,8 +1,12 @@
-﻿<div class="dropdown text-end">
+﻿
+
+<div class="dropdown text-end">
     <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
        Settings 
     </a>
-    <ul class="dropdown-menu text-small">     
+    <ul class="dropdown-menu text-small">
+        <li><a class="dropdown-item" href="@Url.Action("Index", "UserProfile")">Current User:@ViewBag.username</a></li>
+        <li><hr class="dropdown-divider"></li>
         <li><a class="dropdown-item" href="@Url.Action("ReToken", "RefreshToken")">Refresh Token</a></li>
         <li><a class="dropdown-item" href="@Url.Action("UserChangePw", "User")">Change Password</a></li>
         <li><hr class="dropdown-divider"></li>
