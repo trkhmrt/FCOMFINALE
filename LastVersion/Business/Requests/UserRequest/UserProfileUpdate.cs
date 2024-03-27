@@ -37,8 +37,7 @@ namespace Business.Requests.UserRequest
                 else
                 {
 
-                    var error = await response.Content.ReadAsStringAsync();
-
+                    
                     return new ApiResponse { Success = false, Message = response.ReasonPhrase };
                 }
             }
