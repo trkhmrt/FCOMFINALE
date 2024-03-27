@@ -125,7 +125,7 @@ namespace FuturecomLast.Controllers
                 roleUpdateRequest.AddRoleWithList(updateRoleUpdateRequestDto);
               
 
-                return RedirectToAction("UserListAll", "User");
+                return RedirectToAction("AssignRole", "User");
 
             }
             catch (Exception e)
