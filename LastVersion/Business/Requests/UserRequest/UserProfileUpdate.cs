@@ -22,7 +22,7 @@ namespace Business.Requests.UserRequest
 
                 client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
 
-                var response = await client.PutAsync("https://localhost:7069/user/adminupdate", content);
+                var response = await client.PostAsync("https://localhost:7069/user/normaluser", content);
 
 
                 if (response.IsSuccessStatusCode)
@@ -39,7 +39,7 @@ namespace Business.Requests.UserRequest
 
                     var error = await response.Content.ReadAsStringAsync();
 
-                    return new ApiResponse { Success = false, Message = error };
+                    return new ApiResponse { Success = false, Message = response.ReasonPhrase };
                 }
             }
         }

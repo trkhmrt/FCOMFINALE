@@ -17,20 +17,23 @@ namespace FuturecomLast.Controllers
         [HttpGet]
         public IActionResult Index()
         {
+
+
             return View();
         }
 
         [HttpPost]
-        public IActionResult Index(NormalUserUpdateDto user)
+        public async Task<IActionResult> Index(NormalUserUpdateDto user)
         {
             HttpContext.Request.Cookies.TryGetValue("accessToken", out string accessToken);
             HttpContext.Request.Cookies.TryGetValue("username", out string username);
-
+            user.UserName = username;
             ViewBag.username = username;
 
         
-            userUpdateByName.UserUpdate(user, accessToken);
+            var result = await userUpdateByName.UserUpdate(user, accessToken);
 
+            ViewBag.message = result.Message ;
 
             return View();
         }
