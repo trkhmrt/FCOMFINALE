@@ -4483,11 +4483,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/tarikhamarat/Documents/GitHub/FuturecomCase/FuturecomApi/EntityLayer/EntityLayer.csproj",
+      "projectUniqueName": "/Users/tarikhamarat/Desktop/FCOMFINALE/FuturecomApi/EntityLayer/EntityLayer.csproj",
       "projectName": "EntityLayer",
-      "projectPath": "/Users/tarikhamarat/Documents/GitHub/FuturecomCase/FuturecomApi/EntityLayer/EntityLayer.csproj",
+      "projectPath": "/Users/tarikhamarat/Desktop/FCOMFINALE/FuturecomApi/EntityLayer/EntityLayer.csproj",
       "packagesPath": "/Users/tarikhamarat/.nuget/packages/",
-      "outputPath": "/Users/tarikhamarat/Documents/GitHub/FuturecomCase/FuturecomApi/EntityLayer/obj/",
+      "outputPath": "/Users/tarikhamarat/Desktop/FCOMFINALE/FuturecomApi/EntityLayer/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/tarikhamarat/.nuget/NuGet/NuGet.Config"

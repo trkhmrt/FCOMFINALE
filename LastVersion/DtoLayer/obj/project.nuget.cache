@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "peHKN+Iay2JXyq6fxgJvVyxZ6ufWfFFj6r/hvwYKG4qz73D3dNErH71+HvbtIOlwXU/4HFSOg10V/VZWAINqKw==",
+  "dgSpecHash": "9GqqvxKIfvrRrNBGQxAgbx8CLU1xGsKBdEgvZF7cMP+P8d7TxpVL5Ko6AbQfyHo9GQCGFj5bLKfrL7m0tVj9nw==",
   "success": true,
-  "projectFilePath": "/Users/tarikhamarat/Documents/GitHub/FCOMFINALE/LastVersion/DtoLayer/DtoLayer.csproj",
+  "projectFilePath": "/Users/tarikhamarat/Desktop/FCOMFINALE/LastVersion/DtoLayer/DtoLayer.csproj",
   "expectedPackageFiles": [
     "/Users/tarikhamarat/.nuget/packages/automapper/12.0.1/automapper.12.0.1.nupkg.sha512",
     "/Users/tarikhamarat/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/12.0.1/automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

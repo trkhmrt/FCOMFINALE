@@ -27,7 +27,7 @@ namespace FuturecomLast.Controllers
         {
             HttpContext.Request.Cookies.TryGetValue("accessToken", out string accessToken);
             HttpContext.Request.Cookies.TryGetValue("username", out string username);
-            user.UserName = username;
+            user.username = username;
             ViewBag.username = username;
 
         

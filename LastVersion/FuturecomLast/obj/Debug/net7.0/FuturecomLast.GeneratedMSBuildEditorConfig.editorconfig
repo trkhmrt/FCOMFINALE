@@ -9,101 +9,105 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = FuturecomLast
 build_property.RootNamespace = FuturecomLast
-build_property.ProjectDir = /Users/tarikhamarat/Documents/GitHub/FCOMFINALE/LastVersion/FuturecomLast/
+build_property.ProjectDir = /Users/tarikhamarat/Desktop/FCOMFINALE/LastVersion/FuturecomLast/
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /Users/tarikhamarat/Documents/GitHub/FCOMFINALE/LastVersion/FuturecomLast
+build_property.MSBuildProjectDirectory = /Users/tarikhamarat/Desktop/FCOMFINALE/LastVersion/FuturecomLast
 build_property._RazorSourceGeneratorDebug = 
 
-[/Users/tarikhamarat/Documents/GitHub/FCOMFINALE/LastVersion/FuturecomLast/Views/Auth/Login.cshtml]
+[/Users/tarikhamarat/Desktop/FCOMFINALE/LastVersion/FuturecomLast/Views/Auth/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXV0aC9Mb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tarikhamarat/Documents/GitHub/FCOMFINALE/LastVersion/FuturecomLast/Views/Auth/_LoginLayout.cshtml]
+[/Users/tarikhamarat/Desktop/FCOMFINALE/LastVersion/FuturecomLast/Views/Auth/_LoginLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXV0aC9fTG9naW5MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tarikhamarat/Documents/GitHub/FCOMFINALE/LastVersion/FuturecomLast/Views/ErrorPages/AccessDenied.cshtml]
+[/Users/tarikhamarat/Desktop/FCOMFINALE/LastVersion/FuturecomLast/Views/ErrorPages/AccessDenied.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRXJyb3JQYWdlcy9BY2Nlc3NEZW5pZWQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tarikhamarat/Documents/GitHub/FCOMFINALE/LastVersion/FuturecomLast/Views/Home/Index.cshtml]
+[/Users/tarikhamarat/Desktop/FCOMFINALE/LastVersion/FuturecomLast/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tarikhamarat/Documents/GitHub/FCOMFINALE/LastVersion/FuturecomLast/Views/Log/Index.cshtml]
+[/Users/tarikhamarat/Desktop/FCOMFINALE/LastVersion/FuturecomLast/Views/Log/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTG9nL0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tarikhamarat/Documents/GitHub/FCOMFINALE/LastVersion/FuturecomLast/Views/Role/AddRole.cshtml]
+[/Users/tarikhamarat/Desktop/FCOMFINALE/LastVersion/FuturecomLast/Views/RefreshToken/ReToken.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmVmcmVzaFRva2VuL1JlVG9rZW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/tarikhamarat/Desktop/FCOMFINALE/LastVersion/FuturecomLast/Views/Role/AddRole.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUm9sZS9BZGRSb2xlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tarikhamarat/Documents/GitHub/FCOMFINALE/LastVersion/FuturecomLast/Views/Role/AssignRole.cshtml]
+[/Users/tarikhamarat/Desktop/FCOMFINALE/LastVersion/FuturecomLast/Views/Role/AssignRole.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUm9sZS9Bc3NpZ25Sb2xlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tarikhamarat/Documents/GitHub/FCOMFINALE/LastVersion/FuturecomLast/Views/Shared/Components/AdminSideMenu/Default.cshtml]
+[/Users/tarikhamarat/Desktop/FCOMFINALE/LastVersion/FuturecomLast/Views/Shared/Components/AdminSideMenu/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0NvbXBvbmVudHMvQWRtaW5TaWRlTWVudS9EZWZhdWx0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tarikhamarat/Documents/GitHub/FCOMFINALE/LastVersion/FuturecomLast/Views/Shared/Components/UserSideMenu/Default.cshtml]
+[/Users/tarikhamarat/Desktop/FCOMFINALE/LastVersion/FuturecomLast/Views/Shared/Components/UserSideMenu/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0NvbXBvbmVudHMvVXNlclNpZGVNZW51L0RlZmF1bHQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tarikhamarat/Documents/GitHub/FCOMFINALE/LastVersion/FuturecomLast/Views/Shared/Components/UserView/Default.cshtml]
+[/Users/tarikhamarat/Desktop/FCOMFINALE/LastVersion/FuturecomLast/Views/Shared/Components/UserView/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0NvbXBvbmVudHMvVXNlclZpZXcvRGVmYXVsdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tarikhamarat/Documents/GitHub/FCOMFINALE/LastVersion/FuturecomLast/Views/Shared/Error.cshtml]
+[/Users/tarikhamarat/Desktop/FCOMFINALE/LastVersion/FuturecomLast/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tarikhamarat/Documents/GitHub/FCOMFINALE/LastVersion/FuturecomLast/Views/Shared/HandleError.cshtml]
+[/Users/tarikhamarat/Desktop/FCOMFINALE/LastVersion/FuturecomLast/Views/Shared/HandleError.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0hhbmRsZUVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tarikhamarat/Documents/GitHub/FCOMFINALE/LastVersion/FuturecomLast/Views/Shared/_ValidationScriptsPartial.cshtml]
+[/Users/tarikhamarat/Desktop/FCOMFINALE/LastVersion/FuturecomLast/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tarikhamarat/Documents/GitHub/FCOMFINALE/LastVersion/FuturecomLast/Views/User/UserAdd.cshtml]
+[/Users/tarikhamarat/Desktop/FCOMFINALE/LastVersion/FuturecomLast/Views/User/UserAdd.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlci9Vc2VyQWRkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tarikhamarat/Documents/GitHub/FCOMFINALE/LastVersion/FuturecomLast/Views/User/UserChangePw.cshtml]
+[/Users/tarikhamarat/Desktop/FCOMFINALE/LastVersion/FuturecomLast/Views/User/UserChangePw.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlci9Vc2VyQ2hhbmdlUHcuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tarikhamarat/Documents/GitHub/FCOMFINALE/LastVersion/FuturecomLast/Views/User/UserDelete.cshtml]
+[/Users/tarikhamarat/Desktop/FCOMFINALE/LastVersion/FuturecomLast/Views/User/UserDelete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlci9Vc2VyRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tarikhamarat/Documents/GitHub/FCOMFINALE/LastVersion/FuturecomLast/Views/User/UserDetail.cshtml]
+[/Users/tarikhamarat/Desktop/FCOMFINALE/LastVersion/FuturecomLast/Views/User/UserDetail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlci9Vc2VyRGV0YWlsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tarikhamarat/Documents/GitHub/FCOMFINALE/LastVersion/FuturecomLast/Views/User/UserListAll.cshtml]
+[/Users/tarikhamarat/Desktop/FCOMFINALE/LastVersion/FuturecomLast/Views/User/UserListAll.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlci9Vc2VyTGlzdEFsbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tarikhamarat/Documents/GitHub/FCOMFINALE/LastVersion/FuturecomLast/Views/User/UserUpdate.cshtml]
+[/Users/tarikhamarat/Desktop/FCOMFINALE/LastVersion/FuturecomLast/Views/User/UserUpdate.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlci9Vc2VyVXBkYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tarikhamarat/Documents/GitHub/FCOMFINALE/LastVersion/FuturecomLast/Views/UserProfile/Index.cshtml]
+[/Users/tarikhamarat/Desktop/FCOMFINALE/LastVersion/FuturecomLast/Views/UserProfile/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlclByb2ZpbGUvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tarikhamarat/Documents/GitHub/FCOMFINALE/LastVersion/FuturecomLast/Views/_ViewImports.cshtml]
+[/Users/tarikhamarat/Desktop/FCOMFINALE/LastVersion/FuturecomLast/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tarikhamarat/Documents/GitHub/FCOMFINALE/LastVersion/FuturecomLast/Views/_ViewStart.cshtml]
+[/Users/tarikhamarat/Desktop/FCOMFINALE/LastVersion/FuturecomLast/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/tarikhamarat/Documents/GitHub/FCOMFINALE/LastVersion/FuturecomLast/Views/Shared/_Layout.cshtml]
+[/Users/tarikhamarat/Desktop/FCOMFINALE/LastVersion/FuturecomLast/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-hya0sqcysx

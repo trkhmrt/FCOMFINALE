@@ -12,6 +12,8 @@ namespace DtoLayer.Concrete
         [Required(ErrorMessage = "Please type new pw")]
         [MinLength(8)]
         public string NewPw { get; set; }
+
+        public string  username { get; set; }
     }
 }
 

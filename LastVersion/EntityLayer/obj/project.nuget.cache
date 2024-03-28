@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "YQrek38VXrJ4kVr+JWSQV1DGv/gr2TKmJI2bcOGV3FIvVATnEdTPkHGO2lFFqkIuKkCPVv0rG+UxmelEY0BWTQ==",
+  "dgSpecHash": "zqBbVqx7+AF77NMlz6M0zuLkl/zjYmQ+NNZ+Xb4aZNp1rh/c7BknRU0azHwOqtjmh1gCGULk35UfHPhfCt2hAQ==",
   "success": true,
-  "projectFilePath": "/Users/tarikhamarat/Documents/GitHub/FCOMFINALE/LastVersion/EntityLayer/EntityLayer.csproj",
+  "projectFilePath": "/Users/tarikhamarat/Desktop/FCOMFINALE/LastVersion/EntityLayer/EntityLayer.csproj",
   "expectedPackageFiles": [
     "/Users/tarikhamarat/.nuget/packages/automapper/12.0.1/automapper.12.0.1.nupkg.sha512",
     "/Users/tarikhamarat/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/12.0.1/automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

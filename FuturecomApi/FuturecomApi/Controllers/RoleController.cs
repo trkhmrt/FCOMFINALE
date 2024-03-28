@@ -15,7 +15,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace FuturecomApi.Controllers
 {
     [Route("/[controller]")]
-    [AllowAnonymous]
+    [Authorize]
     public class RoleController : Controller
     {
         Context context = new Context();
@@ -133,7 +133,7 @@ namespace FuturecomApi.Controllers
 
             var roleNames = newRoles.Select(r => r.Name).ToList();
 
-
+            await _userManager.UpdateSecurityStampAsync(user);
             await _userManager.RemoveFromRolesAsync(user, roller);
             await _userManager.AddToRolesAsync(user, roleNames);
 

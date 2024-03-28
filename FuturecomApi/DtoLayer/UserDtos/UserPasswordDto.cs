@@ -3,7 +3,7 @@ namespace DtoLayer.UserDtos
 {
 	public class UserPasswordDto
 	{
-		public string? Id { get; set; }
+		public string? username { get; set; }
 
 		public string? CurrentPw { get; set; }
 

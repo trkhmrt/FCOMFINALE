@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2a2RilBnD3N7bb9FD0hdhF2w121qMt5WMURzDdxbP03qZXrk3FN8nbZdzfXYIRx8jl/Kx0J8zURtjH+dIfUHjw==",
+  "dgSpecHash": "eQ2BHhtU3RAHYfQVdTFdIhWSp/eR596zJoXiZA8sgQtF4IH39UOoe3Vqa15pvp4AbUwsym2j4NjL176PVFL+gw==",
   "success": true,
-  "projectFilePath": "/Users/tarikhamarat/Documents/GitHub/FuturecomCase/FuturecomApi/FuturecomApi/FuturecomApi.csproj",
+  "projectFilePath": "/Users/tarikhamarat/Desktop/FCOMFINALE/FuturecomApi/FuturecomApi/FuturecomApi.csproj",
   "expectedPackageFiles": [
     "/Users/tarikhamarat/.nuget/packages/automapper/9.0.0/automapper.9.0.0.nupkg.sha512",
     "/Users/tarikhamarat/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/7.0.0/automapper.extensions.microsoft.dependencyinjection.7.0.0.nupkg.sha512",

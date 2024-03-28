@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "o9QDkxwKsHhGRwCIh+qNc+mMeNqqezCLkUSfZA8KWtbl8BKiZKKtRzOrkdSSQ0r0LBm7IOyr2IiIwLGp7kF6Mg==",
+  "dgSpecHash": "loe+PbKLP/F8LD87vP/bKcu+aQXI2MSN+fEe7/0VOhq99QQAH79gWZfS7QDrH6ND8CFWcCCqGyDMhjks4cGmig==",
   "success": true,
-  "projectFilePath": "/Users/tarikhamarat/Documents/GitHub/FCOMFINALE/LastVersion/FuturecomLast/FuturecomLast.csproj",
+  "projectFilePath": "/Users/tarikhamarat/Desktop/FCOMFINALE/LastVersion/FuturecomLast/FuturecomLast.csproj",
   "expectedPackageFiles": [
     "/Users/tarikhamarat/.nuget/packages/automapper/12.0.1/automapper.12.0.1.nupkg.sha512",
     "/Users/tarikhamarat/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/12.0.1/automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

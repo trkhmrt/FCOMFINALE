@@ -36,9 +36,9 @@ namespace Business.Requests
 
                 if (response.IsSuccessStatusCode)
                 {
-                    //Buraya Cevap başarılı dönebilir.Başarısızda olduğu gibi
+                    
                     var succeded = await response.Content.ReadAsStringAsync();
-                    var jsonObject = JObject.Parse(succeded);
+                   
 
 
 
@@ -46,13 +46,21 @@ namespace Business.Requests
 
 
                 }
-                else
+                else if (response.StatusCode == System.Net.HttpStatusCode.Unauthorized)
                 {
 
-                    var error = await response.Content.ReadAsStringAsync();
-
-                    return new ApiResponse { Success = false, Message = error };
+                    return new ApiResponse { Success = false, Message = "TOKEN GEÇERLİ DEĞİL TEKRARDAN GİRİŞ YAPIN YADA TOKEN YENİLEYİN" };
                 }
+                else if (response.StatusCode == System.Net.HttpStatusCode.Forbidden)
+                {
+
+                    return new ApiResponse { Success = false, Message = "BURAYA YETKİNİZ BULUNMAMAKTA" };
+                }
+                else
+                {
+                    return new ApiResponse { Success = false, Message = response.ReasonPhrase };
+                }
+
             }
         }
 

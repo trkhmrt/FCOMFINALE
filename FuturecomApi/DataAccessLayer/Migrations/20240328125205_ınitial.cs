@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace DataAccessLayer.Migrations
 {
     /// <inheritdoc />
-    public partial class Initial : Migration
+    public partial class ınitial : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -35,6 +35,7 @@ namespace DataAccessLayer.Migrations
                     Email = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: false),
                     FirstName = table.Column<string>(type: "nvarchar(32)", maxLength: 32, nullable: false),
                     LastName = table.Column<string>(type: "nvarchar(64)", maxLength: 64, nullable: false),
+                    PhoneNumber = table.Column<string>(type: "nvarchar(16)", maxLength: 16, nullable: false),
                     Status = table.Column<bool>(type: "bit", nullable: false),
                     UserName = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
                     NormalizedUserName = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
@@ -43,7 +44,6 @@ namespace DataAccessLayer.Migrations
                     PasswordHash = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     SecurityStamp = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     ConcurrencyStamp = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    PhoneNumber = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     PhoneNumberConfirmed = table.Column<bool>(type: "bit", nullable: false),
                     TwoFactorEnabled = table.Column<bool>(type: "bit", nullable: false),
                     LockoutEnd = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: true),
@@ -56,17 +56,18 @@ namespace DataAccessLayer.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "TokenUsers",
+                name: "Errors",
                 columns: table => new
                 {
-                    Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
-                    AccessToken = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    RefreshToken = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    UserName = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    ErrorID = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    Type = table.Column<string>(type: "nvarchar(32)", maxLength: 32, nullable: false),
+                    StatusCode = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Message = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    CreatedDate = table.Column<DateTime>(type: "datetime2", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_TokenUsers", x => x.Id);
+                    table.PrimaryKey("PK_Errors", x => x.ErrorID);
                 });
 
             migrationBuilder.CreateTable(
@@ -175,14 +176,33 @@ namespace DataAccessLayer.Migrations
                         onDelete: ReferentialAction.Cascade);
                 });
 
+            migrationBuilder.CreateTable(
+                name: "UserLogs",
+                columns: table => new
+                {
+                    UserLogID = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    UserID = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    Type = table.Column<string>(type: "nvarchar(2)", maxLength: 2, nullable: false),
+                    CreatedDate = table.Column<DateTime>(type: "datetime2", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_UserLogs", x => x.UserLogID);
+                    table.ForeignKey(
+                        name: "FK_UserLogs_AspNetUsers_UserID",
+                        column: x => x.UserID,
+                        principalTable: "AspNetUsers",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
             migrationBuilder.InsertData(
                 table: "AspNetRoles",
                 columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
                 values: new object[,]
                 {
-                    { new Guid("0c94df79-f641-49a0-8a21-a9a0db18d13e"), null, "Writer", "WRITER" },
-                    { new Guid("41de6e03-2205-470c-9616-6c28c739938f"), null, "NormalUser", "NORMALUSER" },
-                    { new Guid("952119e5-4ee3-4df2-9c02-06539652bfae"), null, "Admin", "ADMIN" }
+                    { new Guid("9b017f21-40c0-4b12-83ef-4902de6bfecb"), null, "NormalUser", "NORMALUSER" },
+                    { new Guid("d595d94d-cc3b-4534-afe5-4dbfef9dad01"), null, "Admin", "ADMIN" }
                 });
 
             migrationBuilder.InsertData(
@@ -190,8 +210,8 @@ namespace DataAccessLayer.Migrations
                 columns: new[] { "Id", "AccessFailedCount", "ConcurrencyStamp", "Email", "EmailConfirmed", "FirstName", "LastName", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "Status", "TwoFactorEnabled", "UserName" },
                 values: new object[,]
                 {
-                    { new Guid("844aac4d-33da-4c76-9ae6-e8815b4e76c8"), 0, "e0d51f87-017c-4be5-9c11-2daf714214d5", "user@example.com", true, "Normal", "User", false, null, "USER@EXAMPLE.COM", "NORMALUSER", "AQAAAAIAAYagAAAAENQJ4Q6Wl4pCrAoHMf3ZE8JnyimPUqGCefgeRSB/qK8Ua1hVwQwDB0j/PE1Cocc7tg==", "555 555 55 55", false, null, true, false, "normaluser" },
-                    { new Guid("a9b47552-3afe-404d-902c-f8b17dde6a06"), 0, "bd5f0a88-e7bb-4c60-b283-ecdfd76c345b", "trkhamarat@gmail.com", true, "Tarik", "Hamarat", false, null, "TRKHAMARAT@GMAIL.COM", "ADMIN", "AQAAAAIAAYagAAAAEOAYUmw7y9a9NDLGeP9kuQSqlksOfFyoNlozRBTD9NiQG3/YAppSHwkX+mqyli3POg==", "553 769 63 62", false, null, true, false, "admin" }
+                    { new Guid("567d8974-6617-4b57-a3c3-1a16fbd51e18"), 0, "a952f187-ebaa-4d5d-a7fe-b5fdfee7740c", "user@example.com", true, "Normal", "User", false, null, "USER@EXAMPLE.COM", "NORMALUSER", "AQAAAAIAAYagAAAAEDNF2LMp5HtV7f4IFt/1Zz2SgDXk/3Rl2pjswENfeCnVnD/h6vuw/ol7zNKkH41O0g==", "555 555 55 55", false, null, true, false, "normaluser" },
+                    { new Guid("96a932d7-ee4f-4f33-a873-71d46970a96b"), 0, "6ebe67b1-1307-472d-930e-a00b4556c022", "trkhamarat@gmail.com", true, "Tarik", "Hamarat", false, null, "TRKHAMARAT@GMAIL.COM", "ADMIN", "AQAAAAIAAYagAAAAELvAt2FU/0M8UgLl54x6zJHIPlfD5zU9V63H7QZs8RkfEPk5GPAfhdovYwrRYR4O5A==", "553 769 63 62", false, null, true, false, "admin" }
                 });
 
             migrationBuilder.InsertData(
@@ -199,8 +219,8 @@ namespace DataAccessLayer.Migrations
                 columns: new[] { "RoleId", "UserId" },
                 values: new object[,]
                 {
-                    { new Guid("41de6e03-2205-470c-9616-6c28c739938f"), new Guid("844aac4d-33da-4c76-9ae6-e8815b4e76c8") },
-                    { new Guid("952119e5-4ee3-4df2-9c02-06539652bfae"), new Guid("a9b47552-3afe-404d-902c-f8b17dde6a06") }
+                    { new Guid("9b017f21-40c0-4b12-83ef-4902de6bfecb"), new Guid("567d8974-6617-4b57-a3c3-1a16fbd51e18") },
+                    { new Guid("d595d94d-cc3b-4534-afe5-4dbfef9dad01"), new Guid("96a932d7-ee4f-4f33-a873-71d46970a96b") }
                 });
 
             migrationBuilder.CreateIndex(
@@ -241,6 +261,11 @@ namespace DataAccessLayer.Migrations
                 column: "NormalizedUserName",
                 unique: true,
                 filter: "[NormalizedUserName] IS NOT NULL");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_UserLogs_UserID",
+                table: "UserLogs",
+                column: "UserID");
         }
 
         /// <inheritdoc />
@@ -262,7 +287,10 @@ namespace DataAccessLayer.Migrations
                 name: "AspNetUserTokens");
 
             migrationBuilder.DropTable(
-                name: "TokenUsers");
+                name: "Errors");
+
+            migrationBuilder.DropTable(
+                name: "UserLogs");
 
             migrationBuilder.DropTable(
                 name: "AspNetRoles");

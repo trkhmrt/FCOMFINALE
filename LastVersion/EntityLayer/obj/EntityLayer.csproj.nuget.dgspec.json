@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/tarikhamarat/Documents/GitHub/FCOMFINALE/LastVersion/EntityLayer/EntityLayer.csproj": {}
+    "/Users/tarikhamarat/Desktop/FCOMFINALE/LastVersion/EntityLayer/EntityLayer.csproj": {}
   },
   "projects": {
-    "/Users/tarikhamarat/Documents/GitHub/FCOMFINALE/LastVersion/EntityLayer/EntityLayer.csproj": {
+    "/Users/tarikhamarat/Desktop/FCOMFINALE/LastVersion/EntityLayer/EntityLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/tarikhamarat/Documents/GitHub/FCOMFINALE/LastVersion/EntityLayer/EntityLayer.csproj",
+        "projectUniqueName": "/Users/tarikhamarat/Desktop/FCOMFINALE/LastVersion/EntityLayer/EntityLayer.csproj",
         "projectName": "EntityLayer",
-        "projectPath": "/Users/tarikhamarat/Documents/GitHub/FCOMFINALE/LastVersion/EntityLayer/EntityLayer.csproj",
+        "projectPath": "/Users/tarikhamarat/Desktop/FCOMFINALE/LastVersion/EntityLayer/EntityLayer.csproj",
         "packagesPath": "/Users/tarikhamarat/.nuget/packages/",
-        "outputPath": "/Users/tarikhamarat/Documents/GitHub/FCOMFINALE/LastVersion/EntityLayer/obj/",
+        "outputPath": "/Users/tarikhamarat/Desktop/FCOMFINALE/LastVersion/EntityLayer/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/tarikhamarat/.nuget/NuGet/NuGet.Config"

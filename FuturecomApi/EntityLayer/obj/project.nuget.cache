@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "C8DsjNf3sxnU1ANQhNRoTZGhJWILMglUWyslBLQvtBOZy5P/KGpRvVIb6gAroWg7Zlzw9KlIIWhEL1rJlZpRag==",
+  "dgSpecHash": "uhIbHNuKOwoqvKTeUAh5Mc80AQAVELLOhxR5hOUGrpVtZmSxBzl3qk5neFP4VjTj9gkWK/J0KTpJj9vUi9Cm1g==",
   "success": true,
-  "projectFilePath": "/Users/tarikhamarat/Documents/GitHub/FuturecomCase/FuturecomApi/EntityLayer/EntityLayer.csproj",
+  "projectFilePath": "/Users/tarikhamarat/Desktop/FCOMFINALE/FuturecomApi/EntityLayer/EntityLayer.csproj",
   "expectedPackageFiles": [
     "/Users/tarikhamarat/.nuget/packages/automapper/9.0.0/automapper.9.0.0.nupkg.sha512",
     "/Users/tarikhamarat/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/7.0.0/automapper.extensions.microsoft.dependencyinjection.7.0.0.nupkg.sha512",

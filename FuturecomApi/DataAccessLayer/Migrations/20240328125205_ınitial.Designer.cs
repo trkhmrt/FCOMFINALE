@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DataAccessLayer.Migrations
 {
     [DbContext(typeof(Context))]
-    [Migration("20240326124943_ınitial")]
+    [Migration("20240328125205_ınitial")]
     partial class ınitial
     {
         /// <inheritdoc />
@@ -82,13 +82,13 @@ namespace DataAccessLayer.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("78b07f9f-fce4-4c7f-b8e7-9f0e7449d446"),
+                            Id = new Guid("d595d94d-cc3b-4534-afe5-4dbfef9dad01"),
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         },
                         new
                         {
-                            Id = new Guid("8b5bbf89-83de-450c-84c5-f6856c8c245f"),
+                            Id = new Guid("9b017f21-40c0-4b12-83ef-4902de6bfecb"),
                             Name = "NormalUser",
                             NormalizedName = "NORMALUSER"
                         });
@@ -178,9 +178,9 @@ namespace DataAccessLayer.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("39996e5a-7ffe-4fa6-aa92-2f517b6c82f0"),
+                            Id = new Guid("96a932d7-ee4f-4f33-a873-71d46970a96b"),
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "9cdf9f61-4991-4dfd-a377-c028333c4ad1",
+                            ConcurrencyStamp = "6ebe67b1-1307-472d-930e-a00b4556c022",
                             Email = "trkhamarat@gmail.com",
                             EmailConfirmed = true,
                             FirstName = "Tarik",
@@ -188,7 +188,7 @@ namespace DataAccessLayer.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "TRKHAMARAT@GMAIL.COM",
                             NormalizedUserName = "ADMIN",
-                            PasswordHash = "AQAAAAIAAYagAAAAEN9AASxu5vU7+tEr43FhQkG+NgHZMA9gGdFPGp1DzurVuJ3mgd2Uc7kVLfRNuTW/4A==",
+                            PasswordHash = "AQAAAAIAAYagAAAAELvAt2FU/0M8UgLl54x6zJHIPlfD5zU9V63H7QZs8RkfEPk5GPAfhdovYwrRYR4O5A==",
                             PhoneNumber = "553 769 63 62",
                             PhoneNumberConfirmed = false,
                             Status = true,
@@ -197,9 +197,9 @@ namespace DataAccessLayer.Migrations
                         },
                         new
                         {
-                            Id = new Guid("0e7e8fb8-128a-4899-a03c-d4209158d21b"),
+                            Id = new Guid("567d8974-6617-4b57-a3c3-1a16fbd51e18"),
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "57c663de-98fa-4487-9c1d-d8861fd58bc6",
+                            ConcurrencyStamp = "a952f187-ebaa-4d5d-a7fe-b5fdfee7740c",
                             Email = "user@example.com",
                             EmailConfirmed = true,
                             FirstName = "Normal",
@@ -207,7 +207,7 @@ namespace DataAccessLayer.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "USER@EXAMPLE.COM",
                             NormalizedUserName = "NORMALUSER",
-                            PasswordHash = "AQAAAAIAAYagAAAAEDYr6A2LlQnOC2yy72IpmrPB6QR4qMYtvsQVHxRIaqvWKgtnh0h60aEMCiN2ecO6HA==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEDNF2LMp5HtV7f4IFt/1Zz2SgDXk/3Rl2pjswENfeCnVnD/h6vuw/ol7zNKkH41O0g==",
                             PhoneNumber = "555 555 55 55",
                             PhoneNumberConfirmed = false,
                             Status = true,
@@ -326,13 +326,13 @@ namespace DataAccessLayer.Migrations
                     b.HasData(
                         new
                         {
-                            UserId = new Guid("39996e5a-7ffe-4fa6-aa92-2f517b6c82f0"),
-                            RoleId = new Guid("78b07f9f-fce4-4c7f-b8e7-9f0e7449d446")
+                            UserId = new Guid("96a932d7-ee4f-4f33-a873-71d46970a96b"),
+                            RoleId = new Guid("d595d94d-cc3b-4534-afe5-4dbfef9dad01")
                         },
                         new
                         {
-                            UserId = new Guid("0e7e8fb8-128a-4899-a03c-d4209158d21b"),
-                            RoleId = new Guid("8b5bbf89-83de-450c-84c5-f6856c8c245f")
+                            UserId = new Guid("567d8974-6617-4b57-a3c3-1a16fbd51e18"),
+                            RoleId = new Guid("9b017f21-40c0-4b12-83ef-4902de6bfecb")
                         });
                 });
 

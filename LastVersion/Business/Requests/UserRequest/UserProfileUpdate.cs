@@ -34,10 +34,18 @@ namespace Business.Requests.UserRequest
 
 
                 }
-                else
+                else if (response.StatusCode == System.Net.HttpStatusCode.Unauthorized)
                 {
 
-                    
+                    return new ApiResponse { Success = false, Message = "TOKEN GEÇERLİ DEĞİL TEKRARDAN GİRİŞ YAPIN YADA TOKEN YENİLEYİN" };
+                }
+                else if (response.StatusCode == System.Net.HttpStatusCode.Forbidden)
+                {
+
+                    return new ApiResponse { Success = false, Message = "BURAYA YETKİNİZ BULUNMAMAKTA" };
+                }
+                else
+                {
                     return new ApiResponse { Success = false, Message = response.ReasonPhrase };
                 }
             }

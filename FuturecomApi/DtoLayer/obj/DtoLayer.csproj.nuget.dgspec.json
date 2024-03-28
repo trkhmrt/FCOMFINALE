@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/tarikhamarat/Documents/GitHub/FuturecomCase/FuturecomApi/DtoLayer/DtoLayer.csproj": {}
+    "/Users/tarikhamarat/Desktop/FCOMFINALE/FuturecomApi/DtoLayer/DtoLayer.csproj": {}
   },
   "projects": {
-    "/Users/tarikhamarat/Documents/GitHub/FuturecomCase/FuturecomApi/DtoLayer/DtoLayer.csproj": {
+    "/Users/tarikhamarat/Desktop/FCOMFINALE/FuturecomApi/DtoLayer/DtoLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/tarikhamarat/Documents/GitHub/FuturecomCase/FuturecomApi/DtoLayer/DtoLayer.csproj",
+        "projectUniqueName": "/Users/tarikhamarat/Desktop/FCOMFINALE/FuturecomApi/DtoLayer/DtoLayer.csproj",
         "projectName": "DtoLayer",
-        "projectPath": "/Users/tarikhamarat/Documents/GitHub/FuturecomCase/FuturecomApi/DtoLayer/DtoLayer.csproj",
+        "projectPath": "/Users/tarikhamarat/Desktop/FCOMFINALE/FuturecomApi/DtoLayer/DtoLayer.csproj",
         "packagesPath": "/Users/tarikhamarat/.nuget/packages/",
-        "outputPath": "/Users/tarikhamarat/Documents/GitHub/FuturecomCase/FuturecomApi/DtoLayer/obj/",
+        "outputPath": "/Users/tarikhamarat/Desktop/FCOMFINALE/FuturecomApi/DtoLayer/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/tarikhamarat/.nuget/NuGet/NuGet.Config"
@@ -27,8 +27,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "/Users/tarikhamarat/Documents/GitHub/FuturecomCase/FuturecomApi/EntityLayer/EntityLayer.csproj": {
-                "projectPath": "/Users/tarikhamarat/Documents/GitHub/FuturecomCase/FuturecomApi/EntityLayer/EntityLayer.csproj"
+              "/Users/tarikhamarat/Desktop/FCOMFINALE/FuturecomApi/EntityLayer/EntityLayer.csproj": {
+                "projectPath": "/Users/tarikhamarat/Desktop/FCOMFINALE/FuturecomApi/EntityLayer/EntityLayer.csproj"
               }
             }
           }
@@ -72,14 +72,14 @@
         }
       }
     },
-    "/Users/tarikhamarat/Documents/GitHub/FuturecomCase/FuturecomApi/EntityLayer/EntityLayer.csproj": {
+    "/Users/tarikhamarat/Desktop/FCOMFINALE/FuturecomApi/EntityLayer/EntityLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/tarikhamarat/Documents/GitHub/FuturecomCase/FuturecomApi/EntityLayer/EntityLayer.csproj",
+        "projectUniqueName": "/Users/tarikhamarat/Desktop/FCOMFINALE/FuturecomApi/EntityLayer/EntityLayer.csproj",
         "projectName": "EntityLayer",
-        "projectPath": "/Users/tarikhamarat/Documents/GitHub/FuturecomCase/FuturecomApi/EntityLayer/EntityLayer.csproj",
+        "projectPath": "/Users/tarikhamarat/Desktop/FCOMFINALE/FuturecomApi/EntityLayer/EntityLayer.csproj",
         "packagesPath": "/Users/tarikhamarat/.nuget/packages/",
-        "outputPath": "/Users/tarikhamarat/Documents/GitHub/FuturecomCase/FuturecomApi/EntityLayer/obj/",
+        "outputPath": "/Users/tarikhamarat/Desktop/FCOMFINALE/FuturecomApi/EntityLayer/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/tarikhamarat/.nuget/NuGet/NuGet.Config"

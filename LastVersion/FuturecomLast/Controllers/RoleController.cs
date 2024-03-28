@@ -38,12 +38,14 @@ namespace FuturecomLast.Controllers
 
 
         [HttpPost]
-        public IActionResult AddRole(string rolename)
+        public async Task<IActionResult> AddRole(string rolename)
         {
             RoleAddRequest roleAddRequest = new RoleAddRequest();
             if (rolename != null)
             {
-                if (roleAddRequest.AddRole(rolename).Result)
+                HttpContext.Request.Cookies.TryGetValue("accessToken", out string accessToken);
+                var result = await roleAddRequest.AddRole(rolename, accessToken);
+                if (result.Success)
                 {
                     Role role = new Role
                     {
@@ -53,14 +55,16 @@ namespace FuturecomLast.Controllers
                     };
                     _roleManager.CreateAsync(role);
 
+
+
                     return RedirectToAction("AddRole");
                 }
-               
-                
+
+                ViewBag.error = result.Message;
             }
 
 
-            return RedirectToAction("AddRole");
+            return View();
 
 
         }
@@ -139,7 +143,7 @@ namespace FuturecomLast.Controllers
                 roleUpdateRequest.AddRoleWithList(updateRoleUpdateRequestDto);
               
 
-                return RedirectToAction("UserListAll", "User");
+                return RedirectToAction("UserListAll","User");
 
             }
             catch (Exception e)

@@ -125,10 +125,12 @@ namespace FuturecomApi.Controllers
 
         [HttpPost]
         [Route("changepw")]
+        [Authorize]
         public async Task<IActionResult> ChangePassword([FromBody] UserPasswordDto request)
         {
             
-                var user = await _userManager.FindByIdAsync(request.Id);
+                var user = await _userManager.FindByNameAsync(request.username);
+                 var userId = await _userManager.GetUserIdAsync(user);
                 if (user == null)
                 {
                     return BadRequest("Invalid user");
@@ -137,6 +139,7 @@ namespace FuturecomApi.Controllers
 
                 if (!await _userManager.CheckPasswordAsync(user, request.CurrentPw))
                 {
+                  
                     return BadRequest("Incorrect current password");
                 }
 
@@ -146,7 +149,7 @@ namespace FuturecomApi.Controllers
                 {
 
 
-                    logManager.TInsert("CP", $"{user.Id}");
+                    logManager.TInsert("CP", $"{userId}");
 
                     return Ok("Password changed successfully");
 
@@ -159,6 +162,42 @@ namespace FuturecomApi.Controllers
         }
 
 
+
+        [HttpPost]
+        [Route("changestatus")]
+        [Authorize]
+        public async Task<IActionResult> ChangeStatus([FromBody] UserStatusUpdateDto request)
+        {
+
+            var user = await _userManager.FindByIdAsync(request.id);
+
+        
+                
+            if (user == null)
+            {
+                return BadRequest("Invalid user");
+            }
+
+
+            user.Status = !request.status;
+
+            var result = await _userManager.UpdateAsync(user);
+
+            if (result.Succeeded)
+            {
+
+
+                logManager.TInsert("CP", $"{request.id}");
+
+                return Ok("Status changed successfully");
+
+
+            }
+
+            return BadRequest("Failed to change status");
+
+
+        }
 
 
         [HttpPut]
@@ -198,11 +237,11 @@ namespace FuturecomApi.Controllers
        
             }
 
-        [HttpPut]
-        [Route("normaluser/{userId}")]
-        public async Task<IActionResult> NormalUserUpdate(string userId, [FromBody] UserUpdateNormalDto userN)
+        [HttpPost]
+        [Route("normaluser")]
+        public async Task<IActionResult> NormalUserUpdate([FromBody] UserUpdateNormalDto userN)
         {
-            var user = await _userManager.FindByIdAsync(userId);
+            var user = await _userManager.FindByNameAsync(userN.username);
 
             if (user == null)
             {
@@ -216,12 +255,12 @@ namespace FuturecomApi.Controllers
             user.PhoneNumber = userN.phone;
 
 
-
+            var security = await _userManager.UpdateSecurityStampAsync(user);
             var result = await _userManager.UpdateAsync(user);
-
+            var userId = await _userManager.GetUserIdAsync(user);
             if (result.Succeeded)
             {
-               // logManager.LogAdd(userId, "IU");
+                logManager.TInsert("UI", userId);
                 return Ok();
             }
             else
@@ -258,7 +297,7 @@ namespace FuturecomApi.Controllers
       
 
 
-        [HttpDelete("delete/{userId}")]
+        [HttpPost("delete/{userId}")]
         public async Task<IActionResult> DeleteUser(string userId)
         {
             

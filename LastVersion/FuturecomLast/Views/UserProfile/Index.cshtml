@@ -12,7 +12,7 @@
                 <input  value=@ViewBag.username  hidden/>
                 <div class="input-group">
                     <span class="input-group-text" id="basic-addon3">Email</span>
-                    <input type="text"   class="form-control" id="basic-url" aria-describedby="basic-addon3 basic-addon4" asp-for="@Model.Email">
+                    <input type="text"   class="form-control" id="basic-url" aria-describedby="basic-addon3 basic-addon4" asp-for="@Model.mail">
                 </div>
 
             </div>
@@ -20,13 +20,13 @@
 
                 <div class="input-group">
                     <span class="input-group-text" id="basic-addon3">Phone</span>
-                    <input type="text"   class="form-control" id="basic-url" aria-describedby="basic-addon3 basic-addon4" asp-for="@Model.PhoneNumber">
+                    <input type="text"   class="form-control" id="basic-url" aria-describedby="basic-addon3 basic-addon4" asp-for="@Model.phone">
                 </div>
 
             </div>
             <input type="submit" class="btn btn-success" />
 
-            
+            @ViewBag.message
 
         </div>
     </form>

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Cpfzdzqm9fwt5D7mANJYmXfWpUCn4mdE2gCXmZF8xYc0xPnGdXchF9xoRKfxYiFspOnKV+N1LJRdYxv+W9hWJw==",
+  "dgSpecHash": "F6EuOzh8Cl5N+2Bo21UtAn91Kw8cdGI51gKk85nVV7BvTh2XcYF5u400TorV06IOObA+qZZkiONB4yTHq/uKKw==",
   "success": true,
-  "projectFilePath": "/Users/tarikhamarat/Documents/GitHub/FuturecomCase/FuturecomApi/DtoLayer/DtoLayer.csproj",
+  "projectFilePath": "/Users/tarikhamarat/Desktop/FCOMFINALE/FuturecomApi/DtoLayer/DtoLayer.csproj",
   "expectedPackageFiles": [
     "/Users/tarikhamarat/.nuget/packages/automapper/9.0.0/automapper.9.0.0.nupkg.sha512",
     "/Users/tarikhamarat/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/7.0.0/automapper.extensions.microsoft.dependencyinjection.7.0.0.nupkg.sha512",

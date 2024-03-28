@@ -6,7 +6,9 @@ using System.Security.Claims;
 using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
+using BusinessLayer.Concrete;
 using DataAccessLayer.Concrete;
+using DataAccessLayer.EfRepositories;
 using DataAccessLayer.TokenManager;
 using DtoLayer.TokenDtos;
 using EntityLayer.Concrete;
@@ -27,7 +29,7 @@ namespace FuturecomApi.Controllers
     {
         private readonly UserManager<User> _userManager;
     
-        //LogManager logManager = new LogManager(new EfLogRepository());
+        UserLogManager logManager = new UserLogManager(new EfUserLogRepo());
 
         public TokenController(UserManager<User> userManager)
         {
@@ -35,7 +37,7 @@ namespace FuturecomApi.Controllers
             
         }
 
-        [HttpGet("checktoken")]
+        [HttpPost("checktoken")]
         public async Task<IActionResult> CheckToken()
          {
 
@@ -68,12 +70,12 @@ namespace FuturecomApi.Controllers
 
                     var role = await _userManager.GetRolesAsync(myUser);
 
-                   // var newAccesstoken = accessTokenGenerator.CreateToken(myUser, role[0]);
+                    var newAccesstoken = accessTokenGenerator.CreateToken(myUser, role.ToList());
 
-                // logManager.LogAdd(id, "RT");
+                logManager.TInsert("RT",userIdClaim);
 
-                // return Ok(newAccesstoken);
-                return Ok();
+                return Ok(newAccesstoken);
+        
                 }
                 else
                 {

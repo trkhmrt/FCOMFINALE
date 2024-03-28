@@ -36,6 +36,7 @@ namespace FuturecomLast.Controllers
         UserListRequest userListRequest = new UserListRequest();
         UserDeleteRequest userDeleteRequest = new UserDeleteRequest();
         PasswordValidator passwordValidator = new PasswordValidator();
+        UserStatusChangeRequest usc = new UserStatusChangeRequest();
 
 
         private readonly UserManager<User> _userManager;
@@ -71,7 +72,12 @@ namespace FuturecomLast.Controllers
 
                 if (result.Success)
                 {
+
+                    ViewBag.message = result.Message;
+
                     return RedirectToAction("UserListAll");
+
+                
                 }
 
                 ModelState.AddModelError("", result.Message);
@@ -117,11 +123,15 @@ namespace FuturecomLast.Controllers
             var accessToken = cookieValue;
 
 
-            var users = await userListRequest.GetAllUsers(accessToken);
+            var content = await userListRequest.GetAllUsers(accessToken);
 
-            if (users.Item2.Success)
+            if (content.Item2.Success)
             {
-                return View(users.Item1.ToList());
+                return View(content.Item1.ToList());
+            }
+            else
+            {
+                ViewBag.error = content.Item2.Message;
             }
             
             
@@ -172,20 +182,28 @@ namespace FuturecomLast.Controllers
         [Authorize(Roles ="NormalUser,Admin")]
         public async Task<IActionResult> UserChangePw(UserPwUpdateDto info)
         {
-            HttpContext.Request.Cookies.TryGetValue("accessToken", out string cookieValue);
+            HttpContext.Request.Cookies.TryGetValue("accessToken", out string accessToken);
 
-            var accessToken = HttpContext.Session.GetString("accessToken");
+            HttpContext.Request.Cookies.TryGetValue("username", out string username);
 
-        
-           
+
+
+
             if (Request.Method == "POST")
             {
                 var result = passwordValidator.Validate(info);
                if (result.IsValid)
                 {
                     ChangePwRequest changePwRequest = new ChangePwRequest();
-                    changePwRequest.ChangePw(info,accessToken);
 
+                    info.username = username;
+
+                   var content = await changePwRequest.ChangePw(info,accessToken);
+
+                    if (!content.Success)
+                    {
+                        ViewBag.error = content.Message;
+                    }
                 }
                 else
                 {
@@ -208,6 +226,33 @@ namespace FuturecomLast.Controllers
             return View();
             }
 
+
+        [Authorize(Roles = "Admin")]
+        [HttpPost]
+        public async Task<IActionResult> UserStatusUpdate(string id,bool status)
+        {
+            HttpContext.Request.Cookies.TryGetValue("accessToken", out string accessToken);
+
+            UserStatusUpdateDto userstatus = new UserStatusUpdateDto();
+
+            userstatus.id = id;
+            userstatus.status = status;
+
+            var result = await usc.UserUpdate(userstatus, accessToken);
+
+            if (result.Success)
+            {
+                return RedirectToAction("UserListAll");
+            }
+            else
+            {
+
+                return RedirectToAction("UserListAll");
+            }
+           
         }
+
+
     }
+}
 

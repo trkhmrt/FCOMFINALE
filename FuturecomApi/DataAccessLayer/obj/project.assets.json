@@ -4528,11 +4528,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/tarikhamarat/Documents/GitHub/FuturecomCase/FuturecomApi/DataAccessLayer/DataAccessLayer.csproj",
+      "projectUniqueName": "/Users/tarikhamarat/Desktop/FCOMFINALE/FuturecomApi/DataAccessLayer/DataAccessLayer.csproj",
       "projectName": "DataAccessLayer",
-      "projectPath": "/Users/tarikhamarat/Documents/GitHub/FuturecomCase/FuturecomApi/DataAccessLayer/DataAccessLayer.csproj",
+      "projectPath": "/Users/tarikhamarat/Desktop/FCOMFINALE/FuturecomApi/DataAccessLayer/DataAccessLayer.csproj",
       "packagesPath": "/Users/tarikhamarat/.nuget/packages/",
-      "outputPath": "/Users/tarikhamarat/Documents/GitHub/FuturecomCase/FuturecomApi/DataAccessLayer/obj/",
+      "outputPath": "/Users/tarikhamarat/Desktop/FCOMFINALE/FuturecomApi/DataAccessLayer/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/tarikhamarat/.nuget/NuGet/NuGet.Config"
@@ -4548,11 +4548,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "/Users/tarikhamarat/Documents/GitHub/FuturecomCase/FuturecomApi/DtoLayer/DtoLayer.csproj": {
-              "projectPath": "/Users/tarikhamarat/Documents/GitHub/FuturecomCase/FuturecomApi/DtoLayer/DtoLayer.csproj"
+            "/Users/tarikhamarat/Desktop/FCOMFINALE/FuturecomApi/DtoLayer/DtoLayer.csproj": {
+              "projectPath": "/Users/tarikhamarat/Desktop/FCOMFINALE/FuturecomApi/DtoLayer/DtoLayer.csproj"
             },
-            "/Users/tarikhamarat/Documents/GitHub/FuturecomCase/FuturecomApi/EntityLayer/EntityLayer.csproj": {
-              "projectPath": "/Users/tarikhamarat/Documents/GitHub/FuturecomCase/FuturecomApi/EntityLayer/EntityLayer.csproj"
+            "/Users/tarikhamarat/Desktop/FCOMFINALE/FuturecomApi/EntityLayer/EntityLayer.csproj": {
+              "projectPath": "/Users/tarikhamarat/Desktop/FCOMFINALE/FuturecomApi/EntityLayer/EntityLayer.csproj"
             }
           }
         }

@@ -74,7 +74,7 @@ public class Program
                 ValidateAudience = true,
                 ValidateLifetime = true,
                 ValidateIssuerSigningKey = true,
-                
+                ClockSkew=TimeSpan.Zero
             };
         });
 

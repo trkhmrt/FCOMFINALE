@@ -50,9 +50,10 @@ namespace FuturecomApi.Controllers
             }
             else
             {
+
                 var role = await _userManager.GetRolesAsync(user);
-                var token = tokenGenerator.CreateToken(user, role[0]);
-                var refreshtoken = refreshTokenManager.CreateRefreshToken();
+                var token = tokenGenerator.CreateToken(user, role.ToList());
+                var refreshtoken = refreshTokenManager.CreateRefreshToken(user);
 
                 logManager.TInsert("SI", $"{user.Id}");
 

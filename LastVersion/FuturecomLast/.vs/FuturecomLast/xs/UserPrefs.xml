@@ -1,129 +1,127 @@
 ﻿<Properties StartupConfiguration="{58EF6152-0068-40EA-AECD-B630E907B044}|https">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/tarikhamarat/Desktop/LastVersion/FuturecomLast/Middlewares/GlobalTokenValidator.cs" relfile="Middlewares/GlobalTokenValidator.cs" line="20" column="1" />
-      <Breakpoint file="/Users/tarikhamarat/Desktop/LastVersion/FuturecomLast/GlobalTokenValidator/TokenValidationFilter.cs" relfile="GlobalTokenValidator/TokenValidationFilter.cs" line="20" column="1" />
-      <Breakpoint file="/Users/tarikhamarat/Desktop/LastVersion/FuturecomLast/Middlewares/Validate.cs" relfile="Middlewares/Validate.cs" line="20" column="1" />
-      <Breakpoint file="/Users/tarikhamarat/Desktop/LastVersion/FuturecomLast/Middlewares/Validate.cs" relfile="Middlewares/Validate.cs" line="23" column="1" />
-      <Breakpoint file="/Users/tarikhamarat/Desktop/LastVersion/FuturecomLast/Controllers/RoleController.cs" relfile="Controllers/RoleController.cs" line="36" column="1" />
-      <Breakpoint file="/Users/tarikhamarat/Desktop/LastVersion/FuturecomLast/Controllers/UserController.cs" relfile="Controllers/UserController.cs" line="187" column="1" />
-      <Breakpoint file="/Users/tarikhamarat/Desktop/LastVersion/FuturecomLast/Controllers/UserController.cs" relfile="Controllers/UserController.cs" line="63" column="1" />
-      <Breakpoint file="/Users/tarikhamarat/Desktop/LastVersion/FuturecomLast/Controllers/UserController.cs" relfile="Controllers/UserController.cs" line="123" column="1" />
-      <Breakpoint file="/Users/tarikhamarat/Desktop/LastVersion/Business/Requests/UserRequest/RegisterRequest.cs" line="30" column="1" />
-    </BreakpointStore>
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="../EntityLayer/Concrete/UserLog.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="../Business/Requests/UserRequest/UserProfileUpdate.cs">
     <Files>
-      <File FileName="Controllers/AuthController.cs" Line="79" Column="52" IsPinned="True" />
-      <File FileName="Views/Auth/Login.cshtml" Line="16" Column="4" />
-      <File FileName="Models/LoginViewModel.cs" Line="8" Column="9" />
-      <File FileName="../DataAccessLayer/Concrete/Context.cs" Line="91" Column="1" />
-      <File FileName="Controllers/UserController.cs" Line="28" Column="31" />
-      <File FileName="Views/Shared/_Layout.cshtml" Line="116" Column="1" />
-      <File FileName="Models/UserRegisterModel.cs" Line="1" Column="1" />
-      <File FileName="../DtoLayer/Concrete/UserRegisterDto.cs" Line="10" Column="7" />
-      <File FileName="Program.cs" Line="107" Column="1" />
-      <File FileName="Controllers/HomeController.cs" Line="19" Column="18" />
+      <File FileName="Controllers/AuthController.cs" Line="104" Column="9" IsPinned="True" />
+      <File FileName="Views/Auth/Login.cshtml" />
+      <File FileName="Models/LoginViewModel.cs" />
+      <File FileName="../DataAccessLayer/Concrete/Context.cs" />
+      <File FileName="Controllers/UserController.cs" />
+      <File FileName="Views/Shared/_Layout.cshtml" />
+      <File FileName="Models/UserRegisterModel.cs" />
+      <File FileName="../DtoLayer/Concrete/UserRegisterDto.cs" />
+      <File FileName="Program.cs" />
+      <File FileName="Controllers/HomeController.cs" />
       <File FileName="Views/User/UserDelete.cshtml" />
-      <File FileName="Views/User/UserUpdate.cshtml" Line="42" Column="1" />
-      <File FileName="Views/User/UserListAll.cshtml" Line="45" Column="18" />
-      <File FileName="Views/User/UserDetail.cshtml" Line="1" Column="1" />
-      <File FileName="../DtoLayer/Concrete/UserUpdateDto.cs" Line="4" Column="28" />
+      <File FileName="Views/User/UserUpdate.cshtml" />
+      <File FileName="Views/User/UserListAll.cshtml" />
+      <File FileName="Views/User/UserDetail.cshtml" />
+      <File FileName="../DtoLayer/Concrete/UserUpdateDto.cs" />
       <File FileName="Views/Shared/Layout.css" />
-      <File FileName="../DtoLayer/Concrete/UserDetailDto.cs" Line="6" Column="7" />
-      <File FileName="../DtoLayer/Concrete/UserDto.cs" Line="20" Column="41" />
-      <File FileName="Views/_ViewStart.cshtml" Line="2" Column="1" />
+      <File FileName="../DtoLayer/Concrete/UserDetailDto.cs" />
+      <File FileName="../DtoLayer/Concrete/UserDto.cs" />
+      <File FileName="Views/_ViewStart.cshtml" />
       <File FileName="Views/Home/Index.cshtml" />
       <File FileName="Views/Auth/_LoginLayout.cshtml" />
       <File FileName="Views/Shared/_Layout.cshtml.css" />
-      <File FileName="../DtoLayer/Concrete/UserPwUpdateDto.cs" Line="6" Column="30" />
-      <File FileName="Views/User/UserChangePw.cshtml" Line="4" Column="24" />
-      <File FileName="../DataAccessLayer/Abstract/IGenericDal.cs" Line="17" Column="3" />
-      <File FileName="../DataAccessLayer/Abstract/IUserDal.cs" Line="8" Column="1" />
-      <File FileName="../DataAccessLayer/Repositories/GenericRepository.cs" Line="27" Column="47" />
+      <File FileName="../DtoLayer/Concrete/UserPwUpdateDto.cs" />
+      <File FileName="Views/User/UserChangePw.cshtml" />
+      <File FileName="../DataAccessLayer/Abstract/IGenericDal.cs" />
+      <File FileName="../DataAccessLayer/Abstract/IUserDal.cs" />
+      <File FileName="../DataAccessLayer/Repositories/GenericRepository.cs" />
       <File FileName="Views/Shared/_ValidationScriptsPartial.cshtml" />
-      <File FileName="ViewComponents/UserView.cs" Line="21" Column="16" />
-      <File FileName="../Business/Abstract/IGenericService.cs" Line="1" Column="1" />
-      <File FileName="../Business/Validator/PasswordValidator.cs" Line="14" Column="153" />
+      <File FileName="ViewComponents/UserView.cs" />
+      <File FileName="../Business/Abstract/IGenericService.cs" />
+      <File FileName="../Business/Validator/PasswordValidator.cs" />
       <File FileName="Views/_ViewImports.cshtml" />
-      <File FileName="ViewComponents/UserSideMenu.cs" Line="20" Column="6" />
-      <File FileName="Views/Shared/Components/UserSideMenu/Default.cshtml" Line="6" Column="1" />
-      <File FileName="ViewComponents/AdminSideMenu.cs" Line="13" Column="1" />
-      <File FileName="Views/Shared/Components/AdminSideMenu/Default.cshtml" Line="18" Column="128" />
-      <File FileName="Controllers/RoleController.cs" Line="62" Column="77" />
-      <File FileName="Controllers/ErrorPagesController.cs" Line="18" Column="1" />
-      <File FileName="Views/ErrorPages/AccessDenied.cshtml" Line="1" Column="1" />
+      <File FileName="ViewComponents/UserSideMenu.cs" />
+      <File FileName="Views/Shared/Components/UserSideMenu/Default.cshtml" />
+      <File FileName="ViewComponents/AdminSideMenu.cs" />
+      <File FileName="Views/Shared/Components/AdminSideMenu/Default.cshtml" />
+      <File FileName="Controllers/RoleController.cs" />
+      <File FileName="Controllers/ErrorPagesController.cs" />
+      <File FileName="Views/ErrorPages/AccessDenied.cshtml" />
       <File FileName="Views/Shared/Error.cshtml" />
-      <File FileName="Views/Shared/HandleError.cshtml" Line="6" Column="1" />
-      <File FileName="Views/Shared/Components/UserView/Default.cshtml" Line="11" Column="7" />
+      <File FileName="Views/Shared/HandleError.cshtml" />
+      <File FileName="Views/Shared/Components/UserView/Default.cshtml" />
       <File FileName="../EntityLayer/Concrete/Role.cs" />
-      <File FileName="../EntityLayer/Concrete/TokenUser.cs" Line="4" Column="24" />
-      <File FileName="Models/ErrorViewModel.cs" Line="1" Column="1" />
+      <File FileName="../EntityLayer/Concrete/TokenUser.cs" />
+      <File FileName="Models/ErrorViewModel.cs" />
       <File FileName="appsettings.json" />
       <File FileName="Properties/launchSettings.json" />
-      <File FileName="../Business/Validator/TokenValidator.cs" Line="5" Column="34" />
-      <File FileName="../DtoLayer/Concrete/UserLoginDto.cs" Line="8" Column="7" />
-      <File FileName="../../../../../usr/local/share/dotnet/sdk/7.0.314/Microsoft.Common.CurrentVersion.targets" />
-      <File FileName="../EntityLayer/Concrete/ApiResponse.cs" Line="13" Column="53" />
-      <File FileName="Views/User/UserAdd.cshtml" Line="21" Column="1" />
-      <File FileName="../DtoLayer/Concrete/RoleUpdateDto.cs" Line="9" Column="1" />
-      <File FileName="../Business/Requests/RoleRequest/RoleUpdateRequest.cs" Line="30" Column="23" />
-      <File FileName="Views/Role/AssignRole.cshtml" Line="8" Column="4" />
-      <File FileName="../Business/Requests/UserRequest/UserGetByIdRequest.cs" Line="28" Column="1" />
-      <File FileName="Models/RoleAssignViewModel.cs" Line="1" Column="1" />
-      <File FileName="../DtoLayer/Concrete/RoleUpdateRequest.cs" Line="7" Column="8" />
-      <File FileName="../Business/Requests/RoleRequest/RoleGetUser.cs" Line="1" Column="1" />
-      <File FileName="Views/Role/AddRole.cshtml" Line="1" Column="1" />
-      <File FileName="../Business/Requests/AuthRequest/AuthRequest.cs" Line="67" Column="22" />
-      <File FileName="../Business/Requests/RoleRequest/RoleGetAll.cs" Line="16" Column="1" />
-      <File FileName="../Business/Requests/RoleRequest/RoleAddRequest.cs" Line="26" Column="1" />
-      <File FileName="../Business/Requests/UserRequest/RegisterRequest.cs" Line="42" Column="25" />
-      <File FileName="../Business/Requests/UserRequest/ChangePwRequest.cs" Line="26" Column="15" />
-      <File FileName="../Business/Requests/UserRequest/UserDeleteRequest.cs" Line="1" Column="1" />
-      <File FileName="Controllers/RefreshTokenController.cs" Line="33" Column="1" />
-      <File FileName="../Business/Requests/TokenRequest/RefreshTokenRequest.cs" Line="33" Column="1" />
-      <File FileName="../Business/Requests/UserRequest/UserListRequest.cs" Line="64" Column="1" />
-      <File FileName="../EntityLayer/Concrete/User.cs" Line="1" Column="1" />
-      <File FileName="Controllers/LogController.cs" Line="16" Column="1" />
-      <File FileName="../Business/Services/UserService.cs" Line="3" Column="1" />
-      <File FileName="../Business/Services/IUserService.cs" Line="1" Column="1" />
-      <File FileName="../Business/Requests/UserRequest/UserUpdateByName.cs" Line="28" Column="1" />
-      <File FileName="../Business/Requests/LogRequest/LogRequest.cs" Line="10" Column="36" />
-      <File FileName="../EntityLayer/Concrete/UserLog.cs" Line="10" Column="1" />
+      <File FileName="../Business/Validator/TokenValidator.cs" />
+      <File FileName="../DtoLayer/Concrete/UserLoginDto.cs" />
+      <File FileName="../EntityLayer/Concrete/ApiResponse.cs" />
+      <File FileName="Views/User/UserAdd.cshtml" />
+      <File FileName="../DtoLayer/Concrete/RoleUpdateDto.cs" />
+      <File FileName="../Business/Requests/RoleRequest/RoleUpdateRequest.cs" />
+      <File FileName="Views/Role/AssignRole.cshtml" />
+      <File FileName="../Business/Requests/UserRequest/UserGetByIdRequest.cs" />
+      <File FileName="Models/RoleAssignViewModel.cs" />
+      <File FileName="../Business/Requests/RoleRequest/RoleGetUser.cs" />
+      <File FileName="Views/Role/AddRole.cshtml" />
+      <File FileName="../Business/Requests/AuthRequest/AuthRequest.cs" />
+      <File FileName="../Business/Requests/RoleRequest/RoleGetAll.cs" />
+      <File FileName="../Business/Requests/RoleRequest/RoleAddRequest.cs" />
+      <File FileName="../Business/Requests/UserRequest/RegisterRequest.cs" />
+      <File FileName="../Business/Requests/UserRequest/ChangePwRequest.cs" />
+      <File FileName="../Business/Requests/UserRequest/UserDeleteRequest.cs" />
+      <File FileName="Controllers/RefreshTokenController.cs" />
+      <File FileName="../Business/Requests/TokenRequest/RefreshTokenRequest.cs" />
+      <File FileName="../Business/Requests/UserRequest/UserListRequest.cs" />
+      <File FileName="../EntityLayer/Concrete/User.cs" />
+      <File FileName="Controllers/LogController.cs" />
+      <File FileName="../Business/Services/UserService.cs" />
+      <File FileName="../Business/Services/IUserService.cs" />
+      <File FileName="../Business/Requests/UserRequest/UserUpdateByName.cs" />
+      <File FileName="../EntityLayer/Concrete/UserLog.cs" />
+      <File FileName="Views/Log/Index.cshtml" />
+      <File FileName="../Business/Requests/LogRequests/LogRequest.cs" />
+      <File FileName="Controllers/UserProfileController.cs" />
+      <File FileName="Views/UserProfile/Index.cshtml" />
+      <File FileName="../DtoLayer/Concrete/NormalUserUpdateDto.cs" />
+      <File FileName="../Business/Requests/UserRequest/UserProfileUpdate.cs" Line="15" Column="1" />
+      <File FileName="../Business/Requests/UserRequest/UpdateProfilRequest.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="FuturecomLast" expanded="True">
-            <Node name="Business">
-              <Node name="Concrete" expanded="True" />
-            </Node>
-            <Node name="DataAccessLayer" expanded="True" />
-            <Node name="EntityLayer">
-              <Node name="Concrete">
-                <Node name="UserLog.cs" selected="True" />
-              </Node>
-            </Node>
-            <Node name="FuturecomLast">
-              <Node name="Controllers" expanded="True" />
-              <Node name="ViewComponents" expanded="True" />
-              <Node name="Views" expanded="True">
-                <Node name="Shared" expanded="True">
-                  <Node name="Components" expanded="True">
-                    <Node name="AdminSideMenu" expanded="True" />
-                    <Node name="UserSideMenu" expanded="True" />
-                    <Node name="UserView" expanded="True" />
-                  </Node>
+          <Node name="FuturecomLast">
+            <Node name="Business" expanded="True">
+              <Node name="Requests" expanded="True">
+                <Node name="UserRequest" expanded="True">
+                  <Node name="UserProfileUpdate.cs" selected="True" />
                 </Node>
               </Node>
+            </Node>
+            <Node name="FuturecomLast" expanded="True">
+              <Node name="Controllers" expanded="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/tarikhamarat/Desktop/FCOMFINALE/LastVersion/FuturecomLast/Middlewares/GlobalTokenValidator.cs" relfile="Middlewares/GlobalTokenValidator.cs" line="20" column="1" />
+      <Breakpoint file="/Users/tarikhamarat/Desktop/FCOMFINALE/LastVersion/FuturecomLast/GlobalTokenValidator/TokenValidationFilter.cs" relfile="GlobalTokenValidator/TokenValidationFilter.cs" line="20" column="1" />
+      <Breakpoint file="/Users/tarikhamarat/Desktop/FCOMFINALE/LastVersion/FuturecomLast/Middlewares/Validate.cs" relfile="Middlewares/Validate.cs" line="20" column="1" />
+      <Breakpoint file="/Users/tarikhamarat/Desktop/FCOMFINALE/LastVersion/FuturecomLast/Middlewares/Validate.cs" relfile="Middlewares/Validate.cs" line="23" column="1" />
+      <Breakpoint file="/Users/tarikhamarat/Desktop/FCOMFINALE/LastVersion/FuturecomLast/Controllers/RoleController.cs" relfile="Controllers/RoleController.cs" line="42" column="1" />
+      <Breakpoint file="/Users/tarikhamarat/Desktop/FCOMFINALE/LastVersion/FuturecomLast/Controllers/UserController.cs" relfile="Controllers/UserController.cs" line="185" column="1" />
+      <Breakpoint file="/Users/tarikhamarat/Desktop/FCOMFINALE/LastVersion/FuturecomLast/Controllers/UserController.cs" relfile="Controllers/UserController.cs" line="63" column="1" />
+      <Breakpoint file="/Users/tarikhamarat/Desktop/LastVersion/Business/Requests/UserRequest/RegisterRequest.cs" line="30" column="1" />
+      <Breakpoint file="/Users/tarikhamarat/Desktop/FCOMFINALE/LastVersion/FuturecomLast/Controllers/UserController.cs" relfile="Controllers/UserController.cs" line="108" column="1" />
+      <Breakpoint file="/Users/tarikhamarat/Desktop/FCOMFINALE/LastVersion/FuturecomLast/Controllers/UserController.cs" relfile="Controllers/UserController.cs" line="154" column="1" />
+      <Breakpoint file="/Users/tarikhamarat/Desktop/FCOMFINALE/LastVersion/FuturecomLast/Controllers/AuthController.cs" relfile="Controllers/AuthController.cs" line="77" column="1" />
+      <Breakpoint file="/Users/tarikhamarat/Desktop/FCOMFINALE/LastVersion/FuturecomLast/TokenValidation.cs" relfile="TokenValidation.cs" line="12" column="1" />
+      <Breakpoint file="/Users/tarikhamarat/Desktop/FCOMFINALE/LastVersion/FuturecomLast/TokenValidation.cs" relfile="TokenValidation.cs" line="22" column="1" />
+      <Breakpoint file="/Users/tarikhamarat/Desktop/FCOMFINALE/LastVersion/FuturecomLast/Controllers/UserProfileController.cs" relfile="Controllers/UserProfileController.cs" line="27" column="1" />
+      <Breakpoint file="/Users/tarikhamarat/Documents/GitHub/FCOMFINALE/LastVersion/Business/Requests/UserRequest/UserProfileUpdate.cs" line="15" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.ItemProperties.FuturecomLast PreferredExecutionTarget="/Applications/Brave Browser.app" />
 </Properties>
